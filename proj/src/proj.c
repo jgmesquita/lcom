@@ -7,6 +7,7 @@
 #include "xpm_templates.h"
 
 //headers for devices
+#include "rtc.h"
 #include "graphic.h"
 #include "mouse.h"
 #include "keyboard.h"
@@ -101,7 +102,6 @@ int(proj_main_loop)(int argc, char *argv[]) {
     sprite_set_pos(exit, 450, 400);
     sprite_set_pos(player, PLAYER_X, PLAYER_Y);
     drawMenu(play, exit, cursor, logo);
-    printf("%d,%d\n", player->h, player->w);
 
     int ipc_status;
     message msg;
@@ -129,6 +129,13 @@ int(proj_main_loop)(int argc, char *argv[]) {
     uint32_t irq_set_m = BIT(12); 
     uint32_t number_packets = 0;
     struct packet mouse_packet;
+
+    uint8_t bit_no_rtc;
+    if (rtc_subscribe_int(&bit_no_rtc)) {
+        return 1;
+    }
+    //uint32_t irq_set_rtc = BIT(8);
+
     int state = 0;
     int good = 1;
     game_t game;
@@ -174,7 +181,9 @@ int(proj_main_loop)(int argc, char *argv[]) {
                                     sprite_draw(timexpm);
                                     draw_numbers(elapsed_time, 410, 950);
                                     sprite_draw(clockxpm);
-
+                                    char* string = "00:00";
+                                    rtc_read_time(string);
+                                    draw_numbers_time(string, 560, 750);
                                 }
                                 if (game.health <= 0) {
                                     vg_draw_rectangle(0, 0, 1024, 768, BLACK);
@@ -253,6 +262,9 @@ int(proj_main_loop)(int argc, char *argv[]) {
         return 1;
     }
     if (send_command(0xF5)) {
+        return 1;
+    }
+    if (rtc_unsubscribe_int()) {
         return 1;
     }
     if (vg_exit()) {
