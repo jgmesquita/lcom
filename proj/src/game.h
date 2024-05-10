@@ -77,7 +77,7 @@ void drawRetryMenu(sprite_t* play, sprite_t* exit, sprite_t* cursor, sprite_t* t
  * @param enemyA_width Width of the enemy A.
  * @param enemyB_x Position on X-axis of the enemy B.
 */
-int calculate_new_x(int enemyA_width, int enemyB_x);~
+int calculate_new_x(int enemyA_width, int enemyB_x);
 /**
  * @brief This function is responsible to handle the moviment of an enemy which has travels in a vertical line.
  * @param verticalEnemy1 Sprite of the enemy 1.
