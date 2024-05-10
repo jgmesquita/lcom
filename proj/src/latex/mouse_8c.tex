@@ -8,19 +8,19 @@
 \begin{DoxyCompactItemize}
 \item 
 int() \mbox{\hyperlink{mouse_8c_a20285aed4b3ef45812cd967532dd09db}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bit\+\_\+no)
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to subscribe the interupt for the mouse. \end{DoxyCompactList}\item 
 int() \mbox{\hyperlink{mouse_8c_a3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to unsubscribe the interupt for the keyboard. \end{DoxyCompactList}\item 
 int() \mbox{\hyperlink{mouse_8c_ae61f9a128e7b7ac6922e520f40b8ae02}{mouse\+\_\+read\+\_\+status}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}status)
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to read the status of the mouse. \end{DoxyCompactList}\item 
 int() \mbox{\hyperlink{mouse_8c_a6cb8b1b76cd7f500442d8d98d344fd41}{mouse\+\_\+read\+\_\+byte}} (uint8\+\_\+t status, uint8\+\_\+t \texorpdfstring{$\ast$}{*}byte)
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to read the byte from an interupt. \end{DoxyCompactList}\item 
 void() \mbox{\hyperlink{mouse_8c_a210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to handle the interupt of the mouse. \end{DoxyCompactList}\item 
 void() \mbox{\hyperlink{mouse_8c_a25afb9cf1225bb0b03c80719eb1a9e66}{build\+\_\+packet}} (struct packet \texorpdfstring{$\ast$}{*}pp)
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to build the struct packet. \end{DoxyCompactList}\item 
 int() \mbox{\hyperlink{mouse_8c_a926121b9c6d89ac8825f115e3eb8dac3}{send\+\_\+command}} (uint8\+\_\+t command)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function allows to send a command to the mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -43,11 +43,24 @@ bool \mbox{\hyperlink{mouse_8c_a1329766a7eca76b62980d561b48d6c87}{flag\+\_\+comp
 \doxysubsubsection{\texorpdfstring{build\_packet()}{build\_packet()}}
 {\footnotesize\ttfamily void() build\+\_\+packet (\begin{DoxyParamCaption}\item[{struct packet \texorpdfstring{$\ast$}{*}}]{pp }\end{DoxyParamCaption})}
 
+
+
+This function allows to build the struct packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & Struct packet that holds the information about the mouse. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{mouse_8c_a210374b50462acdedab00df64d5cea3c}\label{mouse_8c_a210374b50462acdedab00df64d5cea3c} 
 \index{mouse.c@{mouse.c}!mouse\_ih@{mouse\_ih}}
 \index{mouse\_ih@{mouse\_ih}!mouse.c@{mouse.c}}
 \doxysubsubsection{\texorpdfstring{mouse\_ih()}{mouse\_ih()}}
 {\footnotesize\ttfamily void() mouse\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function allows to handle the interupt of the mouse. 
 
 \Hypertarget{mouse_8c_a6cb8b1b76cd7f500442d8d98d344fd41}\label{mouse_8c_a6cb8b1b76cd7f500442d8d98d344fd41} 
 \index{mouse.c@{mouse.c}!mouse\_read\_byte@{mouse\_read\_byte}}
@@ -55,30 +68,87 @@ bool \mbox{\hyperlink{mouse_8c_a1329766a7eca76b62980d561b48d6c87}{flag\+\_\+comp
 \doxysubsubsection{\texorpdfstring{mouse\_read\_byte()}{mouse\_read\_byte()}}
 {\footnotesize\ttfamily int() mouse\+\_\+read\+\_\+byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{status,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{byte }\end{DoxyParamCaption})}
 
+
+
+This function allows to read the byte from an interupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & Integer to status of the mouse. \\
+\hline
+{\em byte} & Integer to save the byte. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the function. 
+\end{DoxyReturn}
 \Hypertarget{mouse_8c_ae61f9a128e7b7ac6922e520f40b8ae02}\label{mouse_8c_ae61f9a128e7b7ac6922e520f40b8ae02} 
 \index{mouse.c@{mouse.c}!mouse\_read\_status@{mouse\_read\_status}}
 \index{mouse\_read\_status@{mouse\_read\_status}!mouse.c@{mouse.c}}
 \doxysubsubsection{\texorpdfstring{mouse\_read\_status()}{mouse\_read\_status()}}
 {\footnotesize\ttfamily int() mouse\+\_\+read\+\_\+status (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{status }\end{DoxyParamCaption})}
 
+
+
+This function allows to read the status of the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & Integer to status of the mouse. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the function. 
+\end{DoxyReturn}
 \Hypertarget{mouse_8c_a20285aed4b3ef45812cd967532dd09db}\label{mouse_8c_a20285aed4b3ef45812cd967532dd09db} 
 \index{mouse.c@{mouse.c}!mouse\_subscribe\_int@{mouse\_subscribe\_int}}
 \index{mouse\_subscribe\_int@{mouse\_subscribe\_int}!mouse.c@{mouse.c}}
 \doxysubsubsection{\texorpdfstring{mouse\_subscribe\_int()}{mouse\_subscribe\_int()}}
 {\footnotesize\ttfamily int() mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bit\+\_\+no }\end{DoxyParamCaption})}
 
+
+
+This function allows to subscribe the interupt for the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Integer to save the address. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the function. 
+\end{DoxyReturn}
 \Hypertarget{mouse_8c_a3ecf823d80520009ae5e0d76ae40a3c3}\label{mouse_8c_a3ecf823d80520009ae5e0d76ae40a3c3} 
 \index{mouse.c@{mouse.c}!mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}}
 \index{mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}!mouse.c@{mouse.c}}
 \doxysubsubsection{\texorpdfstring{mouse\_unsubscribe\_int()}{mouse\_unsubscribe\_int()}}
 {\footnotesize\ttfamily int() mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+This function allows to unsubscribe the interupt for the keyboard. 
+
+\begin{DoxyReturn}{Returns}
+Status of the function. 
+\end{DoxyReturn}
 \Hypertarget{mouse_8c_a926121b9c6d89ac8825f115e3eb8dac3}\label{mouse_8c_a926121b9c6d89ac8825f115e3eb8dac3} 
 \index{mouse.c@{mouse.c}!send\_command@{send\_command}}
 \index{send\_command@{send\_command}!mouse.c@{mouse.c}}
 \doxysubsubsection{\texorpdfstring{send\_command()}{send\_command()}}
 {\footnotesize\ttfamily int() send\+\_\+command (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command }\end{DoxyParamCaption})}
 
+
+
+This function allows to send a command to the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & Integer that holds the command. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the function. 
+\end{DoxyReturn}
 
 
 \doxysubsection{Variable Documentation}

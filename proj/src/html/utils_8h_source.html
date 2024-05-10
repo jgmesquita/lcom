@@ -83,16 +83,14 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>int(<a class="code hl_function" href="utils_8h.html#a81621440b3d65680979425e39aa8c789">util_get_LSB</a>)(uint16_t val, uint8_t *lsb);</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>int(<a class="code hl_function" href="utils_8h.html#a6a880076cd2ec468834438b6e0c58836">util_get_MSB</a>)(uint16_t val, uint8_t *msb);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>int (<a class="code hl_function" href="utils_8h.html#a79a031a8611f5b2d6afa4158e92b0fb4">util_sys_inb</a>)(<span class="keywordtype">int</span> port, uint8_t *value);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="autils_8h_html_a6a880076cd2ec468834438b6e0c58836"><div class="ttname"><a href="utils_8h.html#a6a880076cd2ec468834438b6e0c58836">util_get_MSB</a></div><div class="ttdeci">int() util_get_MSB(uint16_t val, uint8_t *msb)</div><div class="ttdef"><b>Definition</b> utils.c:14</div></div>
-<div class="ttc" id="autils_8h_html_a79a031a8611f5b2d6afa4158e92b0fb4"><div class="ttname"><a href="utils_8h.html#a79a031a8611f5b2d6afa4158e92b0fb4">util_sys_inb</a></div><div class="ttdeci">int() util_sys_inb(int port, uint8_t *value)</div><div class="ttdef"><b>Definition</b> utils.c:22</div></div>
-<div class="ttc" id="autils_8h_html_a81621440b3d65680979425e39aa8c789"><div class="ttname"><a href="utils_8h.html#a81621440b3d65680979425e39aa8c789">util_get_LSB</a></div><div class="ttdeci">int() util_get_LSB(uint16_t val, uint8_t *lsb)</div><div class="ttdef"><b>Definition</b> utils.c:6</div></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>int(<a class="code hl_function" href="utils_8h.html#a81621440b3d65680979425e39aa8c789">util_get_LSB</a>)(uint16_t val, uint8_t *lsb);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>int(<a class="code hl_function" href="utils_8h.html#a6a880076cd2ec468834438b6e0c58836">util_get_MSB</a>)(uint16_t val, uint8_t *msb);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>int (<a class="code hl_function" href="utils_8h.html#a79a031a8611f5b2d6afa4158e92b0fb4">util_sys_inb</a>)(<span class="keywordtype">int</span> port, uint8_t *value);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="autils_8h_html_a6a880076cd2ec468834438b6e0c58836"><div class="ttname"><a href="utils_8h.html#a6a880076cd2ec468834438b6e0c58836">util_get_MSB</a></div><div class="ttdeci">int() util_get_MSB(uint16_t val, uint8_t *msb)</div><div class="ttdoc">This function allows to get the most significant byte.</div><div class="ttdef"><b>Definition</b> utils.c:14</div></div>
+<div class="ttc" id="autils_8h_html_a79a031a8611f5b2d6afa4158e92b0fb4"><div class="ttname"><a href="utils_8h.html#a79a031a8611f5b2d6afa4158e92b0fb4">util_sys_inb</a></div><div class="ttdeci">int() util_sys_inb(int port, uint8_t *value)</div><div class="ttdoc">This function allows to call the sys_inb() with a value with 8 bits.</div><div class="ttdef"><b>Definition</b> utils.c:22</div></div>
+<div class="ttc" id="autils_8h_html_a81621440b3d65680979425e39aa8c789"><div class="ttname"><a href="utils_8h.html#a81621440b3d65680979425e39aa8c789">util_get_LSB</a></div><div class="ttdeci">int() util_get_LSB(uint16_t val, uint8_t *lsb)</div><div class="ttdoc">This function allows to get the least significant byte.</div><div class="ttdef"><b>Definition</b> utils.c:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

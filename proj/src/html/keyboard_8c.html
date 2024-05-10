@@ -81,16 +81,20 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab1f27c240a6c7b800a98edcab59a0977" id="r_ab1f27c240a6c7b800a98edcab59a0977"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8c.html#ab1f27c240a6c7b800a98edcab59a0977">kb_subscribe_int</a> (uint8_t *bit_no)</td></tr>
+<tr class="memdesc:ab1f27c240a6c7b800a98edcab59a0977"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to subscribe the interupt for the keyboard.  <br /></td></tr>
 <tr class="separator:ab1f27c240a6c7b800a98edcab59a0977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cf9ff7b2a68cc388492c91756a55153" id="r_a7cf9ff7b2a68cc388492c91756a55153"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8c.html#a7cf9ff7b2a68cc388492c91756a55153">kb_unsubscribe_int</a> ()</td></tr>
+<tr class="memdesc:a7cf9ff7b2a68cc388492c91756a55153"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to unsubscribe the interupt for the keyboard.  <br /></td></tr>
 <tr class="separator:a7cf9ff7b2a68cc388492c91756a55153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa61cbb27cd24e6af6104d76ca516406c" id="r_aa61cbb27cd24e6af6104d76ca516406c"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8c.html#aa61cbb27cd24e6af6104d76ca516406c">kb_read_status</a> (uint8_t *status)</td></tr>
 <tr class="separator:aa61cbb27cd24e6af6104d76ca516406c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3269e459ed84272040850a0586fdbbbc" id="r_a3269e459ed84272040850a0586fdbbbc"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8c.html#a3269e459ed84272040850a0586fdbbbc">kb_full</a> ()</td></tr>
+<tr class="memdesc:a3269e459ed84272040850a0586fdbbbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function notifies that the output/input buffer is full.  <br /></td></tr>
 <tr class="separator:a3269e459ed84272040850a0586fdbbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2089c90b6dc655a60a77973a89d0c76f" id="r_a2089c90b6dc655a60a77973a89d0c76f"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8c.html#a2089c90b6dc655a60a77973a89d0c76f">kb_read_scancode</a> (uint8_t status, uint8_t *<a class="el" href="keyboard_8c.html#aa1de7a5557e9d96b83cf03f73c92163f">scancode</a>)</td></tr>
 <tr class="separator:a2089c90b6dc655a60a77973a89d0c76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab084c9c77ba692fb692243554e3fe7d" id="r_aab084c9c77ba692fb692243554e3fe7d"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8c.html#aab084c9c77ba692fb692243554e3fe7d">kb_interupt_handler</a> ()</td></tr>
+<tr class="memdesc:aab084c9c77ba692fb692243554e3fe7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to handle the interupt for the keyboard.  <br /></td></tr>
 <tr class="separator:aab084c9c77ba692fb692243554e3fe7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -124,6 +128,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function notifies that the output/input buffer is full. </p>
+<dl class="section return"><dt>Returns</dt><dd>Status of the buffer. </dd></dl>
+
 </div>
 </div>
 <a id="aab084c9c77ba692fb692243554e3fe7d" name="aab084c9c77ba692fb692243554e3fe7d"></a>
@@ -140,6 +147,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This function allows to handle the interupt for the keyboard. </p>
 
 </div>
 </div>
@@ -205,6 +214,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function allows to subscribe the interupt for the keyboard. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bit_no</td><td>Integer to save the address. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of the function. </dd></dl>
+
 </div>
 </div>
 <a id="a7cf9ff7b2a68cc388492c91756a55153" name="a7cf9ff7b2a68cc388492c91756a55153"></a>
@@ -221,6 +239,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This function allows to unsubscribe the interupt for the keyboard. </p>
+<dl class="section return"><dt>Returns</dt><dd>Status of the function. </dd></dl>
 
 </div>
 </div>

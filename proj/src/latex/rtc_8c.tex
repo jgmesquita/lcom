@@ -6,15 +6,15 @@
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{rtc_8c_a5171a9c0f54940fe60f7500896afcc86}{rtc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bit\+\_\+no)
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to subscribe the interupt for the RTC. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{rtc_8c_ab8f17bf5280c908c8b199a90fefcc758}{rtc\+\_\+unsubscribe\+\_\+int}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to unsubscribe the interupt for the mouse. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{rtc_8c_a4b02e005d3b54c5760608f97c58950f9}{rtc\+\_\+read\+\_\+register}} (uint8\+\_\+t address, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data)
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to read a register from the RTC. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{rtc_8c_a04af70acf312f710c9d53029172a16f5}{rtc\+\_\+set\+\_\+register}} (uint8\+\_\+t address, uint8\+\_\+t data)
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to set a register of the RTC. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{rtc_8c_a6e8238e632c34c9ed1fb03ee69506721}{rtc\+\_\+read\+\_\+time}} (char \texorpdfstring{$\ast$}{*}string)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function allows to read the time from the RTC. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -29,29 +29,85 @@ int \mbox{\hyperlink{rtc_8c_a96f78a87d064e47d627d222f67a8d012}{hook\+\_\+id}} = 
 \doxysubsubsection{\texorpdfstring{rtc\_read\_register()}{rtc\_read\_register()}}
 {\footnotesize\ttfamily int rtc\+\_\+read\+\_\+register (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{address,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption})}
 
+
+
+This function allows to read a register from the RTC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Address of the register. \\
+\hline
+{\em data} & Integer to save the response from the register. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the function. 
+\end{DoxyReturn}
 \Hypertarget{rtc_8c_a6e8238e632c34c9ed1fb03ee69506721}\label{rtc_8c_a6e8238e632c34c9ed1fb03ee69506721} 
 \index{rtc.c@{rtc.c}!rtc\_read\_time@{rtc\_read\_time}}
 \index{rtc\_read\_time@{rtc\_read\_time}!rtc.c@{rtc.c}}
 \doxysubsubsection{\texorpdfstring{rtc\_read\_time()}{rtc\_read\_time()}}
 {\footnotesize\ttfamily int rtc\+\_\+read\+\_\+time (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{string }\end{DoxyParamCaption})}
 
+
+
+This function allows to read the time from the RTC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Array that holds the time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the function. 
+\end{DoxyReturn}
 \Hypertarget{rtc_8c_a04af70acf312f710c9d53029172a16f5}\label{rtc_8c_a04af70acf312f710c9d53029172a16f5} 
 \index{rtc.c@{rtc.c}!rtc\_set\_register@{rtc\_set\_register}}
 \index{rtc\_set\_register@{rtc\_set\_register}!rtc.c@{rtc.c}}
 \doxysubsubsection{\texorpdfstring{rtc\_set\_register()}{rtc\_set\_register()}}
 {\footnotesize\ttfamily int rtc\+\_\+set\+\_\+register (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{address,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
 
+
+
+This function allows to set a register of the RTC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Address of the register. \\
+\hline
+{\em data} & Integer that holds the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the function. 
+\end{DoxyReturn}
 \Hypertarget{rtc_8c_a5171a9c0f54940fe60f7500896afcc86}\label{rtc_8c_a5171a9c0f54940fe60f7500896afcc86} 
 \index{rtc.c@{rtc.c}!rtc\_subscribe\_int@{rtc\_subscribe\_int}}
 \index{rtc\_subscribe\_int@{rtc\_subscribe\_int}!rtc.c@{rtc.c}}
 \doxysubsubsection{\texorpdfstring{rtc\_subscribe\_int()}{rtc\_subscribe\_int()}}
 {\footnotesize\ttfamily int rtc\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bit\+\_\+no }\end{DoxyParamCaption})}
 
+
+
+This function allows to subscribe the interupt for the RTC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Integer to save the address. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the function. 
+\end{DoxyReturn}
 \Hypertarget{rtc_8c_ab8f17bf5280c908c8b199a90fefcc758}\label{rtc_8c_ab8f17bf5280c908c8b199a90fefcc758} 
 \index{rtc.c@{rtc.c}!rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}}
 \index{rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}!rtc.c@{rtc.c}}
 \doxysubsubsection{\texorpdfstring{rtc\_unsubscribe\_int()}{rtc\_unsubscribe\_int()}}
 {\footnotesize\ttfamily int rtc\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function allows to unsubscribe the interupt for the mouse. 
 
 
 

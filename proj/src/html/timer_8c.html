@@ -83,16 +83,22 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac57a7e1140a7e00ad95ac5488d2a671b" id="r_ac57a7e1140a7e00ad95ac5488d2a671b"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#ac57a7e1140a7e00ad95ac5488d2a671b">timer_subscribe_int</a> (uint8_t *bit_no)</td></tr>
+<tr class="memdesc:ac57a7e1140a7e00ad95ac5488d2a671b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to subscribe the interupt for the timer.  <br /></td></tr>
 <tr class="separator:ac57a7e1140a7e00ad95ac5488d2a671b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afabd21de449be154dd65d5fdb2d8045d" id="r_afabd21de449be154dd65d5fdb2d8045d"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#afabd21de449be154dd65d5fdb2d8045d">timer_unsubscribe_int</a> ()</td></tr>
+<tr class="memdesc:afabd21de449be154dd65d5fdb2d8045d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to unsubscribe the interupt for the timer.  <br /></td></tr>
 <tr class="separator:afabd21de449be154dd65d5fdb2d8045d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91a2072306c68353712a6b771287dc2c" id="r_a91a2072306c68353712a6b771287dc2c"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#a91a2072306c68353712a6b771287dc2c">timer_int_handler</a> ()</td></tr>
+<tr class="memdesc:a91a2072306c68353712a6b771287dc2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to handle the interupt. In this counts, it increments an integer "count" by 1 in each interupt.  <br /></td></tr>
 <tr class="separator:a91a2072306c68353712a6b771287dc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a703c60b40c8c49607d6ecb6fef82d27a" id="r_a703c60b40c8c49607d6ecb6fef82d27a"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#a703c60b40c8c49607d6ecb6fef82d27a">timer_get_conf</a> (uint8_t timer, uint8_t *st)</td></tr>
+<tr class="memdesc:a703c60b40c8c49607d6ecb6fef82d27a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to get the configuration of the timer.  <br /></td></tr>
 <tr class="separator:a703c60b40c8c49607d6ecb6fef82d27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a140d8f092c0913cabdca949c4a1cc650" id="r_a140d8f092c0913cabdca949c4a1cc650"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#a140d8f092c0913cabdca949c4a1cc650">timer_display_conf</a> (uint8_t timer, uint8_t st, enum timer_status_field field)</td></tr>
+<tr class="memdesc:a140d8f092c0913cabdca949c4a1cc650"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to display the configuration of the timer.  <br /></td></tr>
 <tr class="separator:a140d8f092c0913cabdca949c4a1cc650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2c04fa8e97ffa748fd3f612886a92a7" id="r_af2c04fa8e97ffa748fd3f612886a92a7"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#af2c04fa8e97ffa748fd3f612886a92a7">timer_set_frequency</a> (uint8_t timer, uint32_t freq)</td></tr>
+<tr class="memdesc:af2c04fa8e97ffa748fd3f612886a92a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to set the frequency of the timer.  <br /></td></tr>
 <tr class="separator:af2c04fa8e97ffa748fd3f612886a92a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -137,6 +143,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function allows to display the configuration of the timer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>Port for the specific timer. </td></tr>
+    <tr><td class="paramname">st</td><td>Hexadecimal integer with the response of the timer. </td></tr>
+    <tr><td class="paramname">field</td><td>Struct to save the configuration. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of the function. </dd></dl>
+
 </div>
 </div>
 <a id="a703c60b40c8c49607d6ecb6fef82d27a" name="a703c60b40c8c49607d6ecb6fef82d27a"></a>
@@ -165,6 +182,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function allows to get the configuration of the timer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>Port for the specific timer. </td></tr>
+    <tr><td class="paramname">st</td><td>Hexadecimal integer to save the response of the timer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of the function. </dd></dl>
+
 </div>
 </div>
 <a id="a91a2072306c68353712a6b771287dc2c" name="a91a2072306c68353712a6b771287dc2c"></a>
@@ -181,6 +208,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This function allows to handle the interupt. In this counts, it increments an integer "count" by 1 in each interupt. </p>
 
 </div>
 </div>
@@ -210,6 +239,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function allows to set the frequency of the timer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>Port for the specific timer. </td></tr>
+    <tr><td class="paramname">freq</td><td>Integer that holds the frequency. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of the function. </dd></dl>
+
 </div>
 </div>
 <a id="ac57a7e1140a7e00ad95ac5488d2a671b" name="ac57a7e1140a7e00ad95ac5488d2a671b"></a>
@@ -228,6 +267,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function allows to subscribe the interupt for the timer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bit_no</td><td>Integer to save the address. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of the function. </dd></dl>
+
 </div>
 </div>
 <a id="afabd21de449be154dd65d5fdb2d8045d" name="afabd21de449be154dd65d5fdb2d8045d"></a>
@@ -244,6 +292,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This function allows to unsubscribe the interupt for the timer. </p>
+<dl class="section return"><dt>Returns</dt><dd>Status of the function. </dd></dl>
 
 </div>
 </div>

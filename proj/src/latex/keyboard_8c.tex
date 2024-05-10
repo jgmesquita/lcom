@@ -6,17 +6,17 @@
 \begin{DoxyCompactItemize}
 \item 
 int() \mbox{\hyperlink{keyboard_8c_ab1f27c240a6c7b800a98edcab59a0977}{kb\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bit\+\_\+no)
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to subscribe the interupt for the keyboard. \end{DoxyCompactList}\item 
 int() \mbox{\hyperlink{keyboard_8c_a7cf9ff7b2a68cc388492c91756a55153}{kb\+\_\+unsubscribe\+\_\+int}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to unsubscribe the interupt for the keyboard. \end{DoxyCompactList}\item 
 int() \mbox{\hyperlink{keyboard_8c_aa61cbb27cd24e6af6104d76ca516406c}{kb\+\_\+read\+\_\+status}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}status)
 \item 
 int() \mbox{\hyperlink{keyboard_8c_a3269e459ed84272040850a0586fdbbbc}{kb\+\_\+full}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em This function notifies that the output/input buffer is full. \end{DoxyCompactList}\item 
 int() \mbox{\hyperlink{keyboard_8c_a2089c90b6dc655a60a77973a89d0c76f}{kb\+\_\+read\+\_\+scancode}} (uint8\+\_\+t status, uint8\+\_\+t \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{keyboard_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}})
 \item 
 void() \mbox{\hyperlink{keyboard_8c_aab084c9c77ba692fb692243554e3fe7d}{kb\+\_\+interupt\+\_\+handler}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function allows to handle the interupt for the keyboard. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -41,11 +41,22 @@ bool \mbox{\hyperlink{keyboard_8c_aa37d952c337acb5c26f3fca3affc90dc}{flag\+\_\+c
 \doxysubsubsection{\texorpdfstring{kb\_full()}{kb\_full()}}
 {\footnotesize\ttfamily int() kb\+\_\+full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+This function notifies that the output/input buffer is full. 
+
+\begin{DoxyReturn}{Returns}
+Status of the buffer. 
+\end{DoxyReturn}
 \Hypertarget{keyboard_8c_aab084c9c77ba692fb692243554e3fe7d}\label{keyboard_8c_aab084c9c77ba692fb692243554e3fe7d} 
 \index{keyboard.c@{keyboard.c}!kb\_interupt\_handler@{kb\_interupt\_handler}}
 \index{kb\_interupt\_handler@{kb\_interupt\_handler}!keyboard.c@{keyboard.c}}
 \doxysubsubsection{\texorpdfstring{kb\_interupt\_handler()}{kb\_interupt\_handler()}}
 {\footnotesize\ttfamily void() kb\+\_\+interupt\+\_\+handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function allows to handle the interupt for the keyboard. 
 
 \Hypertarget{keyboard_8c_a2089c90b6dc655a60a77973a89d0c76f}\label{keyboard_8c_a2089c90b6dc655a60a77973a89d0c76f} 
 \index{keyboard.c@{keyboard.c}!kb\_read\_scancode@{kb\_read\_scancode}}
@@ -65,12 +76,31 @@ bool \mbox{\hyperlink{keyboard_8c_aa37d952c337acb5c26f3fca3affc90dc}{flag\+\_\+c
 \doxysubsubsection{\texorpdfstring{kb\_subscribe\_int()}{kb\_subscribe\_int()}}
 {\footnotesize\ttfamily int() kb\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bit\+\_\+no }\end{DoxyParamCaption})}
 
+
+
+This function allows to subscribe the interupt for the keyboard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Integer to save the address. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the function. 
+\end{DoxyReturn}
 \Hypertarget{keyboard_8c_a7cf9ff7b2a68cc388492c91756a55153}\label{keyboard_8c_a7cf9ff7b2a68cc388492c91756a55153} 
 \index{keyboard.c@{keyboard.c}!kb\_unsubscribe\_int@{kb\_unsubscribe\_int}}
 \index{kb\_unsubscribe\_int@{kb\_unsubscribe\_int}!keyboard.c@{keyboard.c}}
 \doxysubsubsection{\texorpdfstring{kb\_unsubscribe\_int()}{kb\_unsubscribe\_int()}}
 {\footnotesize\ttfamily int() kb\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+This function allows to unsubscribe the interupt for the keyboard. 
+
+\begin{DoxyReturn}{Returns}
+Status of the function. 
+\end{DoxyReturn}
 
 
 \doxysubsection{Variable Documentation}

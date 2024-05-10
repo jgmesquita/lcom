@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['kbc_5fcmd_0',['KBC_CMD',['../keyboard_8h.html#accd56b4b7cdc027b95966350b0e8b6ca',1,'keyboard.h']]],
-  ['kbc_5fcmd_5farg_1',['KBC_CMD_ARG',['../keyboard_8h.html#a86ba9231756abbb662cdbe9c8a5179ae',1,'keyboard.h']]],
-  ['kbc_5fint_5fdisable_2',['KBC_INT_DISABLE',['../keyboard_8h.html#acf9d13bf72313a87190ab5fc37c620eb',1,'keyboard.h']]],
-  ['kbc_5fint_5fenable_3',['KBC_INT_ENABLE',['../keyboard_8h.html#aa69e273c9fd66f141a04da50117cb9b6',1,'keyboard.h']]],
-  ['kbc_5fint_5ftest_4',['KBC_INT_TEST',['../keyboard_8h.html#a5c4f46b2dd7031fb4f77bd8e79870567',1,'keyboard.h']]],
-  ['kbc_5firq_5',['KBC_IRQ',['../keyboard_8h.html#a16c5827f043d82f87c726c2d4369c11d',1,'keyboard.h']]],
-  ['kbc_5fnum_5ftries_6',['KBC_NUM_TRIES',['../keyboard_8h.html#a01be3e103b959ac623cc97a88b22cc5d',1,'keyboard.h']]],
-  ['kbc_5fself_5ftest_7',['KBC_SELF_TEST',['../keyboard_8h.html#a3add1395817336a078643ed6e0175ad6',1,'keyboard.h']]]
+  ['left_5fbutton_0',['LEFT_BUTTON',['../mouse_8h.html#abbc8382ae4ea521f03c119a14478b759',1,'mouse.h']]],
+  ['linear_5fframe_5fbuffer_5fmd_1',['LINEAR_FRAME_BUFFER_MD',['../graphic_8h.html#a2ad5615058ac50633e1425fddffcb07d',1,'graphic.h']]],
+  ['lr_5fenemy_5fx_2',['LR_ENEMY_X',['../game_8h.html#a31969bcf91f64dc3567cd679a9249f21',1,'game.h']]],
+  ['lr_5fenemy_5fy_3',['LR_ENEMY_Y',['../game_8h.html#adac0d2687eb028cc52838c63d828c892',1,'game.h']]]
 ];

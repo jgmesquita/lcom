@@ -9,31 +9,31 @@
 \begin{DoxyCompactItemize}
 \item 
 bool \mbox{\hyperlink{game_8c_a53ac7c066a59f3ff126d50ede430bb94}{check\+\_\+collision\+\_\+menu}} (\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}el, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}cursor)
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to check for collisions. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game_8c_ac64da043058446957d2f72c3510b8a01}{handle\+Moviment}} (uint8\+\_\+t \mbox{\hyperlink{keyboard_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}sp, int is\+\_\+player)
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to handle the moviment according to the keyboard. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game_8c_a07cde59097348864d0084157ad55a4f4}{handle\+Moviment\+Cursor\+Mouse}} (struct packet \texorpdfstring{$\ast$}{*}pp, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}sp)
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to handle the moviment according to the mouse. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game_8c_a605f53c8da4f7368818fbbdb2e6569c2}{handle\+Click}} (uint8\+\_\+t \mbox{\hyperlink{keyboard_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}cursor, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}play, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}exit, int \texorpdfstring{$\ast$}{*}state, int \texorpdfstring{$\ast$}{*}good, \mbox{\hyperlink{structgame__t}{game\+\_\+t}} \texorpdfstring{$\ast$}{*}game)
-\item 
+\begin{DoxyCompactList}\small\item\em This function allows to handle the action of the player. For example, if the player interacts with the start button, the game will start. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game_8c_a9fa55175b609f65c1d86073f051acdb9}{draw\+Menu}} (\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}play, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}exit, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}cursor, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}logo)
-\item 
+\begin{DoxyCompactList}\small\item\em This function is responsible to draw the menu. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game_8c_a3bfb2185ace92c19052be0f509932e2b}{draw\+Retry\+Menu}} (\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}play, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}exit, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}cursor, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}text\+Score, int score)
-\item 
+\begin{DoxyCompactList}\small\item\em This function is responsible to draw the retry menu. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{game_8c_aec95fdcd28e4225d8b2ceac7a7c1ef7f}{calculate\+\_\+new\+\_\+x}} (int enemy\+A\+\_\+width, int enemy\+B\+\_\+x)
-\item 
+\begin{DoxyCompactList}\small\item\em This function is responsible to calcultate the new x for an enemy after he completes his moviment. It makes the game more dynamic. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game_8c_a6938d29764b636746ce8d69840a6a61f}{handle\+Vertical\+Movement\+Enemy}} (\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}vertical\+Enemy1, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}vertical\+Enemy2, int \mbox{\hyperlink{proj_8c_aa97c7080953b1a37809879b21049d531}{elapsed\+\_\+time}})
-\item 
+\begin{DoxyCompactList}\small\item\em This function is responsible to handle the moviment of an enemy which has travels in a vertical line. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{game_8c_a030abb8260262abccea11d958aa31f71}{calculate\+\_\+new\+\_\+y}} (int enemy\+A\+\_\+height, int enemy\+B\+\_\+y)
-\item 
+\begin{DoxyCompactList}\small\item\em This function is responsible to calcultate the new x for an enemy after he completes his moviment. It makes the game more dynamic. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game_8c_aab42810e09d04c66f738beb93f20a7e9}{handle\+Horizontal\+Movement\+Enemy}} (\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}left\+To\+Right\+Enemy, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}right\+To\+Left\+Enemy, int \mbox{\hyperlink{proj_8c_aa97c7080953b1a37809879b21049d531}{elapsed\+\_\+time}})
-\item 
+\begin{DoxyCompactList}\small\item\em This function is responsible to handle the moviment of an enemy which has travels in a horizontal line. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game_8c_a597cc42f0129a111b93a2d54e2e8f661}{draw\+\_\+numbers}} (int number, int position\+\_\+y, int position\+\_\+x)
-\item 
+\begin{DoxyCompactList}\small\item\em This function is transforms a number into many sprites of that number\textquotesingle{}s digits. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{game_8c_a3372876bad6dda631873c76bd886394c}{draw\+\_\+numbers\+\_\+time}} (char \texorpdfstring{$\ast$}{*}string, int position\+\_\+y, int position\+\_\+x)
-\item 
+\begin{DoxyCompactList}\small\item\em This function is transforms the string that holds the time of the RTC into many sprites. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{game_8c_a8c3437afa0dec63d8a827fb5935e5dfa}{check\+\_\+collision}} (\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}player, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}explosion, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}enemy, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}enemies\mbox{[}$\,$\mbox{]}, int enemy\+\_\+index, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{proj_8c_afc4746c9ff4b8b0ac900812a19733040}{last\+\_\+collision\+\_\+time}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{proj_8c_a7cd697ce4427efdf47a9ad36ffba0df8}{explosion\+\_\+time}}, int \mbox{\hyperlink{proj_8c_aa97c7080953b1a37809879b21049d531}{elapsed\+\_\+time}})
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function allows to handle the collisions during the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -66,78 +66,266 @@ xpm\+\_\+row\+\_\+t \mbox{\hyperlink{game_8c_a0f81ff9de0dd09423bec74135655dbd5}{
 \doxysubsubsection{\texorpdfstring{calculate\_new\_x()}{calculate\_new\_x()}}
 {\footnotesize\ttfamily int calculate\+\_\+new\+\_\+x (\begin{DoxyParamCaption}\item[{int}]{enemy\+A\+\_\+width,  }\item[{int}]{enemy\+B\+\_\+x }\end{DoxyParamCaption})}
 
+
+
+This function is responsible to calcultate the new x for an enemy after he completes his moviment. It makes the game more dynamic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy\+A\+\_\+width} & Width of the enemy A. \\
+\hline
+{\em enemy\+B\+\_\+x} & Position on X-\/axis of the enemy B. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{game_8c_a030abb8260262abccea11d958aa31f71}\label{game_8c_a030abb8260262abccea11d958aa31f71} 
 \index{game.c@{game.c}!calculate\_new\_y@{calculate\_new\_y}}
 \index{calculate\_new\_y@{calculate\_new\_y}!game.c@{game.c}}
 \doxysubsubsection{\texorpdfstring{calculate\_new\_y()}{calculate\_new\_y()}}
 {\footnotesize\ttfamily int calculate\+\_\+new\+\_\+y (\begin{DoxyParamCaption}\item[{int}]{enemy\+A\+\_\+height,  }\item[{int}]{enemy\+B\+\_\+y }\end{DoxyParamCaption})}
 
+
+
+This function is responsible to calcultate the new x for an enemy after he completes his moviment. It makes the game more dynamic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy\+A\+\_\+width} & Height of the enemy A. \\
+\hline
+{\em enemy\+B\+\_\+x} & Position on Y-\/axis of the enemy B. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{game_8c_a8c3437afa0dec63d8a827fb5935e5dfa}\label{game_8c_a8c3437afa0dec63d8a827fb5935e5dfa} 
 \index{game.c@{game.c}!check\_collision@{check\_collision}}
 \index{check\_collision@{check\_collision}!game.c@{game.c}}
 \doxysubsubsection{\texorpdfstring{check\_collision()}{check\_collision()}}
 {\footnotesize\ttfamily bool check\+\_\+collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{player,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{explosion,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{enemy,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{enemies\mbox{[}$\,$\mbox{]},  }\item[{int}]{enemy\+\_\+index,  }\item[{int \texorpdfstring{$\ast$}{*}}]{last\+\_\+collision\+\_\+time,  }\item[{int \texorpdfstring{$\ast$}{*}}]{explosion\+\_\+time,  }\item[{int}]{elapsed\+\_\+time }\end{DoxyParamCaption})}
 
+
+
+This function allows to handle the collisions during the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Sprite that holds the player. \\
+\hline
+{\em explosion} & Sprite that holds the explosions. \\
+\hline
+{\em enemy} & Sprite that holds the enemy. \\
+\hline
+{\em enemies} & Array that holds the sprite of the enemies. \\
+\hline
+{\em enemy\+\_\+index} & Position of the enemy in the array. \\
+\hline
+{\em last\+\_\+collision\+\_\+time} & Time of the last collision. \\
+\hline
+{\em explosion\+\_\+time} & Time of the explosion. \\
+\hline
+{\em elapsed\+\_\+time} & Elapsed time. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{game_8c_a53ac7c066a59f3ff126d50ede430bb94}\label{game_8c_a53ac7c066a59f3ff126d50ede430bb94} 
 \index{game.c@{game.c}!check\_collision\_menu@{check\_collision\_menu}}
 \index{check\_collision\_menu@{check\_collision\_menu}!game.c@{game.c}}
 \doxysubsubsection{\texorpdfstring{check\_collision\_menu()}{check\_collision\_menu()}}
 {\footnotesize\ttfamily bool check\+\_\+collision\+\_\+menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{el,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cursor }\end{DoxyParamCaption})}
 
+
+
+This function allows to check for collisions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em el} & The sprite of a screen object. \\
+\hline
+{\em cursor} & The sprite that holds the cursor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean value that holds the result of the collision. 
+\end{DoxyReturn}
 \Hypertarget{game_8c_a597cc42f0129a111b93a2d54e2e8f661}\label{game_8c_a597cc42f0129a111b93a2d54e2e8f661} 
 \index{game.c@{game.c}!draw\_numbers@{draw\_numbers}}
 \index{draw\_numbers@{draw\_numbers}!game.c@{game.c}}
 \doxysubsubsection{\texorpdfstring{draw\_numbers()}{draw\_numbers()}}
 {\footnotesize\ttfamily void draw\+\_\+numbers (\begin{DoxyParamCaption}\item[{int}]{number,  }\item[{int}]{position\+\_\+y,  }\item[{int}]{position\+\_\+x }\end{DoxyParamCaption})}
 
+
+
+This function is transforms a number into many sprites of that number\textquotesingle{}s digits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & Number. \\
+\hline
+{\em position\+\_\+y} & Position in the Y-\/axis of those sprites. \\
+\hline
+{\em position\+\_\+x} & Position in the X-\/axis of those sprites. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{game_8c_a3372876bad6dda631873c76bd886394c}\label{game_8c_a3372876bad6dda631873c76bd886394c} 
 \index{game.c@{game.c}!draw\_numbers\_time@{draw\_numbers\_time}}
 \index{draw\_numbers\_time@{draw\_numbers\_time}!game.c@{game.c}}
 \doxysubsubsection{\texorpdfstring{draw\_numbers\_time()}{draw\_numbers\_time()}}
 {\footnotesize\ttfamily void draw\+\_\+numbers\+\_\+time (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{string,  }\item[{int}]{position\+\_\+y,  }\item[{int}]{position\+\_\+x }\end{DoxyParamCaption})}
 
+
+
+This function is transforms the string that holds the time of the RTC into many sprites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & String of the time. \\
+\hline
+{\em position\+\_\+y} & Position in the Y-\/axis of those sprites. \\
+\hline
+{\em position\+\_\+x} & Position in the X-\/axis of those sprites. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{game_8c_a9fa55175b609f65c1d86073f051acdb9}\label{game_8c_a9fa55175b609f65c1d86073f051acdb9} 
 \index{game.c@{game.c}!drawMenu@{drawMenu}}
 \index{drawMenu@{drawMenu}!game.c@{game.c}}
 \doxysubsubsection{\texorpdfstring{drawMenu()}{drawMenu()}}
 {\footnotesize\ttfamily void draw\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{play,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{exit,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cursor,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{logo }\end{DoxyParamCaption})}
 
+
+
+This function is responsible to draw the menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em play} & Sprite that holds the play button. \\
+\hline
+{\em exit} & Sprite that holds the exit button. \\
+\hline
+{\em cursor} & Sprite that holds the cursor. \\
+\hline
+{\em logo} & Sprite that holds the logo of the game. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{game_8c_a3bfb2185ace92c19052be0f509932e2b}\label{game_8c_a3bfb2185ace92c19052be0f509932e2b} 
 \index{game.c@{game.c}!drawRetryMenu@{drawRetryMenu}}
 \index{drawRetryMenu@{drawRetryMenu}!game.c@{game.c}}
 \doxysubsubsection{\texorpdfstring{drawRetryMenu()}{drawRetryMenu()}}
 {\footnotesize\ttfamily void draw\+Retry\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{play,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{exit,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cursor,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{text\+Score,  }\item[{int}]{score }\end{DoxyParamCaption})}
 
+
+
+This function is responsible to draw the retry menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em play} & Sprite that holds the play button. \\
+\hline
+{\em exit} & Sprite that holds the exit button. \\
+\hline
+{\em cursor} & Sprite that holds the cursor. \\
+\hline
+{\em text\+Score} & Sprite that holds the score of the player. \\
+\hline
+{\em score} & Score of the player. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{game_8c_a605f53c8da4f7368818fbbdb2e6569c2}\label{game_8c_a605f53c8da4f7368818fbbdb2e6569c2} 
 \index{game.c@{game.c}!handleClick@{handleClick}}
 \index{handleClick@{handleClick}!game.c@{game.c}}
 \doxysubsubsection{\texorpdfstring{handleClick()}{handleClick()}}
 {\footnotesize\ttfamily void handle\+Click (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cursor,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{play,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{exit,  }\item[{int \texorpdfstring{$\ast$}{*}}]{state,  }\item[{int \texorpdfstring{$\ast$}{*}}]{good,  }\item[{\mbox{\hyperlink{structgame__t}{game\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{game }\end{DoxyParamCaption})}
 
+
+
+This function allows to handle the action of the player. For example, if the player interacts with the start button, the game will start. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & Hexadecimal value of the key clicked. \\
+\hline
+{\em cursor} & Sprite that holds the cursor. \\
+\hline
+{\em play} & Sprite that holds the play button. \\
+\hline
+{\em exit} & Sprite that holds the exit button. \\
+\hline
+{\em state} & Integer value that holds the state the game. \\
+\hline
+{\em good} & Integer value that controls the while-\/loop. \\
+\hline
+{\em game} & Game struct that holds important information about the game. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{game_8c_aab42810e09d04c66f738beb93f20a7e9}\label{game_8c_aab42810e09d04c66f738beb93f20a7e9} 
 \index{game.c@{game.c}!handleHorizontalMovementEnemy@{handleHorizontalMovementEnemy}}
 \index{handleHorizontalMovementEnemy@{handleHorizontalMovementEnemy}!game.c@{game.c}}
 \doxysubsubsection{\texorpdfstring{handleHorizontalMovementEnemy()}{handleHorizontalMovementEnemy()}}
 {\footnotesize\ttfamily void handle\+Horizontal\+Movement\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{left\+To\+Right\+Enemy,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{right\+To\+Left\+Enemy,  }\item[{int}]{elapsed\+\_\+time }\end{DoxyParamCaption})}
 
+
+
+This function is responsible to handle the moviment of an enemy which has travels in a horizontal line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertical\+Enemy1} & Sprite of the enemy 1. \\
+\hline
+{\em vertical\+Enemy2} & Sprite of the enemy 2. \\
+\hline
+{\em elapsed\+\_\+time} & Elapsed time. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{game_8c_ac64da043058446957d2f72c3510b8a01}\label{game_8c_ac64da043058446957d2f72c3510b8a01} 
 \index{game.c@{game.c}!handleMoviment@{handleMoviment}}
 \index{handleMoviment@{handleMoviment}!game.c@{game.c}}
 \doxysubsubsection{\texorpdfstring{handleMoviment()}{handleMoviment()}}
 {\footnotesize\ttfamily void handle\+Moviment (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{sp,  }\item[{int}]{is\+\_\+player }\end{DoxyParamCaption})}
 
+
+
+This function allows to handle the moviment according to the keyboard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & Hexadecimal value of the key clicked. \\
+\hline
+{\em sp} & Sprite that will move. \\
+\hline
+{\em is\+\_\+player} & Boolean value to check if it is the player. The player has different rules for the moviment. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{game_8c_a07cde59097348864d0084157ad55a4f4}\label{game_8c_a07cde59097348864d0084157ad55a4f4} 
 \index{game.c@{game.c}!handleMovimentCursorMouse@{handleMovimentCursorMouse}}
 \index{handleMovimentCursorMouse@{handleMovimentCursorMouse}!game.c@{game.c}}
 \doxysubsubsection{\texorpdfstring{handleMovimentCursorMouse()}{handleMovimentCursorMouse()}}
 {\footnotesize\ttfamily void handle\+Moviment\+Cursor\+Mouse (\begin{DoxyParamCaption}\item[{struct packet \texorpdfstring{$\ast$}{*}}]{pp,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{sp }\end{DoxyParamCaption})}
 
+
+
+This function allows to handle the moviment according to the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & Struct the has the information about the moviment of the mouse. \\
+\hline
+{\em sp} & Sprite that will move. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{game_8c_a6938d29764b636746ce8d69840a6a61f}\label{game_8c_a6938d29764b636746ce8d69840a6a61f} 
 \index{game.c@{game.c}!handleVerticalMovementEnemy@{handleVerticalMovementEnemy}}
 \index{handleVerticalMovementEnemy@{handleVerticalMovementEnemy}!game.c@{game.c}}
 \doxysubsubsection{\texorpdfstring{handleVerticalMovementEnemy()}{handleVerticalMovementEnemy()}}
 {\footnotesize\ttfamily void handle\+Vertical\+Movement\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{vertical\+Enemy1,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{vertical\+Enemy2,  }\item[{int}]{elapsed\+\_\+time }\end{DoxyParamCaption})}
 
+
+
+This function is responsible to handle the moviment of an enemy which has travels in a vertical line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertical\+Enemy1} & Sprite of the enemy 1. \\
+\hline
+{\em vertical\+Enemy2} & Sprite of the enemy 2. \\
+\hline
+{\em elapsed\+\_\+time} & Elapsed time. \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Variable Documentation}

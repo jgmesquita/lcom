@@ -138,26 +138,23 @@ Macros</h2></td></tr>
 <tr class="separator:a2877405e9b042d1e29cc09bcc8daccfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c0f8c2cc8170ddda747b0b266022e05" id="r_a2c0f8c2cc8170ddda747b0b266022e05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#a2c0f8c2cc8170ddda747b0b266022e05">BREAK_CODE_BIT</a>&#160;&#160;&#160;BIT(7)</td></tr>
 <tr class="separator:a2c0f8c2cc8170ddda747b0b266022e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea3e2c47ff5ce4b0dbf5e81e40678aab" id="r_aea3e2c47ff5ce4b0dbf5e81e40678aab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#aea3e2c47ff5ce4b0dbf5e81e40678aab">INT_KBD</a>&#160;&#160;&#160;BIT(0)</td></tr>
-<tr class="separator:aea3e2c47ff5ce4b0dbf5e81e40678aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44a184d740d45229170b9b263378d740" id="r_a44a184d740d45229170b9b263378d740"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#a44a184d740d45229170b9b263378d740">INT_MOU</a>&#160;&#160;&#160;BIT(1)</td></tr>
-<tr class="separator:a44a184d740d45229170b9b263378d740"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19930b86ba4c64067d597a8b115dc3ad" id="r_a19930b86ba4c64067d597a8b115dc3ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#a19930b86ba4c64067d597a8b115dc3ad">DIS_KBD</a>&#160;&#160;&#160;BIT(4)</td></tr>
-<tr class="separator:a19930b86ba4c64067d597a8b115dc3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4306ee172c4fc7a335410c6147dc0d4" id="r_ac4306ee172c4fc7a335410c6147dc0d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#ac4306ee172c4fc7a335410c6147dc0d4">DIS_MOU</a>&#160;&#160;&#160;BIT(5)</td></tr>
-<tr class="separator:ac4306ee172c4fc7a335410c6147dc0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aab084c9c77ba692fb692243554e3fe7d" id="r_aab084c9c77ba692fb692243554e3fe7d"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#aab084c9c77ba692fb692243554e3fe7d">kb_interupt_handler</a> ()</td></tr>
+<tr class="memdesc:aab084c9c77ba692fb692243554e3fe7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to handle the interupt for the keyboard.  <br /></td></tr>
 <tr class="separator:aab084c9c77ba692fb692243554e3fe7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cf9ff7b2a68cc388492c91756a55153" id="r_a7cf9ff7b2a68cc388492c91756a55153"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#a7cf9ff7b2a68cc388492c91756a55153">kb_unsubscribe_int</a> ()</td></tr>
+<tr class="memdesc:a7cf9ff7b2a68cc388492c91756a55153"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to unsubscribe the interupt for the keyboard.  <br /></td></tr>
 <tr class="separator:a7cf9ff7b2a68cc388492c91756a55153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1f27c240a6c7b800a98edcab59a0977" id="r_ab1f27c240a6c7b800a98edcab59a0977"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#ab1f27c240a6c7b800a98edcab59a0977">kb_subscribe_int</a> (uint8_t *bit_no)</td></tr>
+<tr class="memdesc:ab1f27c240a6c7b800a98edcab59a0977"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to subscribe the interupt for the keyboard.  <br /></td></tr>
 <tr class="separator:ab1f27c240a6c7b800a98edcab59a0977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f241a9a5c667c65e49c6e41fd74ebfa" id="r_a0f241a9a5c667c65e49c6e41fd74ebfa"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#a0f241a9a5c667c65e49c6e41fd74ebfa">kb_poll</a> (uint8_t read[], uint8_t *size_poll)</td></tr>
+<tr class="memdesc:a0f241a9a5c667c65e49c6e41fd74ebfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to handle the poll for the keyboard.  <br /></td></tr>
 <tr class="separator:a0f241a9a5c667c65e49c6e41fd74ebfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3269e459ed84272040850a0586fdbbbc" id="r_a3269e459ed84272040850a0586fdbbbc"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#a3269e459ed84272040850a0586fdbbbc">kb_full</a> ()</td></tr>
+<tr class="memdesc:a3269e459ed84272040850a0586fdbbbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function notifies that the output/input buffer is full.  <br /></td></tr>
 <tr class="separator:a3269e459ed84272040850a0586fdbbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -217,34 +214,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a19930b86ba4c64067d597a8b115dc3ad" name="a19930b86ba4c64067d597a8b115dc3ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19930b86ba4c64067d597a8b115dc3ad">&#9670;&#160;</a></span>DIS_KBD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DIS_KBD&#160;&#160;&#160;BIT(4)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac4306ee172c4fc7a335410c6147dc0d4" name="ac4306ee172c4fc7a335410c6147dc0d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4306ee172c4fc7a335410c6147dc0d4">&#9670;&#160;</a></span>DIS_MOU</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DIS_MOU&#160;&#160;&#160;BIT(5)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a592dfdf397b21913348b4dd6b7759b2d" name="a592dfdf397b21913348b4dd6b7759b2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a592dfdf397b21913348b4dd6b7759b2d">&#9670;&#160;</a></span>ESC_BREAK_CODE</h2>
 
@@ -281,34 +250,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define INH_FLAG&#160;&#160;&#160;BIT(4)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aea3e2c47ff5ce4b0dbf5e81e40678aab" name="aea3e2c47ff5ce4b0dbf5e81e40678aab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea3e2c47ff5ce4b0dbf5e81e40678aab">&#9670;&#160;</a></span>INT_KBD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define INT_KBD&#160;&#160;&#160;BIT(0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a44a184d740d45229170b9b263378d740" name="a44a184d740d45229170b9b263378d740"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44a184d740d45229170b9b263378d740">&#9670;&#160;</a></span>INT_MOU</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define INT_MOU&#160;&#160;&#160;BIT(1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -639,6 +580,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function notifies that the output/input buffer is full. </p>
+<dl class="section return"><dt>Returns</dt><dd>Status of the buffer. </dd></dl>
+
 </div>
 </div>
 <a id="aab084c9c77ba692fb692243554e3fe7d" name="aab084c9c77ba692fb692243554e3fe7d"></a>
@@ -655,6 +599,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This function allows to handle the interupt for the keyboard. </p>
 
 </div>
 </div>
@@ -684,6 +630,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function allows to handle the poll for the keyboard. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">read</td><td>Array to save the input. </td></tr>
+    <tr><td class="paramname">size_poll</td><td>Integer to save the position of the array that saves the input. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ab1f27c240a6c7b800a98edcab59a0977" name="ab1f27c240a6c7b800a98edcab59a0977"></a>
@@ -702,6 +657,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function allows to subscribe the interupt for the keyboard. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bit_no</td><td>Integer to save the address. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of the function. </dd></dl>
+
 </div>
 </div>
 <a id="a7cf9ff7b2a68cc388492c91756a55153" name="a7cf9ff7b2a68cc388492c91756a55153"></a>
@@ -718,6 +682,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This function allows to unsubscribe the interupt for the keyboard. </p>
+<dl class="section return"><dt>Returns</dt><dd>Status of the function. </dd></dl>
 
 </div>
 </div>

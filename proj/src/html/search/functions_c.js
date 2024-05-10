@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['util_5fget_5flsb_0',['util_get_lsb',['../utils_8c.html#a81621440b3d65680979425e39aa8c789',1,'util_get_LSB(uint16_t val, uint8_t *lsb):&#160;utils.c'],['../utils_8h.html#a81621440b3d65680979425e39aa8c789',1,'util_get_LSB(uint16_t val, uint8_t *lsb):&#160;utils.c']]],
-  ['util_5fget_5fmsb_1',['util_get_msb',['../utils_8c.html#a6a880076cd2ec468834438b6e0c58836',1,'util_get_MSB(uint16_t val, uint8_t *msb):&#160;utils.c'],['../utils_8h.html#a6a880076cd2ec468834438b6e0c58836',1,'util_get_MSB(uint16_t val, uint8_t *msb):&#160;utils.c']]],
-  ['util_5fsys_5finb_2',['util_sys_inb',['../utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4',1,'util_sys_inb(int port, uint8_t *value):&#160;utils.c'],['../utils_8h.html#a79a031a8611f5b2d6afa4158e92b0fb4',1,'util_sys_inb(int port, uint8_t *value):&#160;utils.c']]]
+  ['vg_5fdraw_5fhline_0',['vg_draw_hline',['../graphic_8c.html#a5e5b25bd525250f61f40b9e9f212d5e6',1,'graphic.c']]],
+  ['vg_5fdraw_5frectangle_1',['vg_draw_rectangle',['../graphic_8c.html#a99d2da2559e11200c6b40c469e9977ec',1,'graphic.c']]],
+  ['vg_5finit_2',['vg_init',['../graphic_8c.html#afa0e432c3ebeefc29a59abc4d22918df',1,'graphic.c']]]
 ];

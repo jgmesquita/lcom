@@ -83,18 +83,25 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a20285aed4b3ef45812cd967532dd09db" id="r_a20285aed4b3ef45812cd967532dd09db"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mouse_8c.html#a20285aed4b3ef45812cd967532dd09db">mouse_subscribe_int</a> (uint8_t *bit_no)</td></tr>
+<tr class="memdesc:a20285aed4b3ef45812cd967532dd09db"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to subscribe the interupt for the mouse.  <br /></td></tr>
 <tr class="separator:a20285aed4b3ef45812cd967532dd09db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ecf823d80520009ae5e0d76ae40a3c3" id="r_a3ecf823d80520009ae5e0d76ae40a3c3"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mouse_8c.html#a3ecf823d80520009ae5e0d76ae40a3c3">mouse_unsubscribe_int</a> ()</td></tr>
+<tr class="memdesc:a3ecf823d80520009ae5e0d76ae40a3c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to unsubscribe the interupt for the keyboard.  <br /></td></tr>
 <tr class="separator:a3ecf823d80520009ae5e0d76ae40a3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae61f9a128e7b7ac6922e520f40b8ae02" id="r_ae61f9a128e7b7ac6922e520f40b8ae02"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mouse_8c.html#ae61f9a128e7b7ac6922e520f40b8ae02">mouse_read_status</a> (uint8_t *status)</td></tr>
+<tr class="memdesc:ae61f9a128e7b7ac6922e520f40b8ae02"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to read the status of the mouse.  <br /></td></tr>
 <tr class="separator:ae61f9a128e7b7ac6922e520f40b8ae02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cb8b1b76cd7f500442d8d98d344fd41" id="r_a6cb8b1b76cd7f500442d8d98d344fd41"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mouse_8c.html#a6cb8b1b76cd7f500442d8d98d344fd41">mouse_read_byte</a> (uint8_t status, uint8_t *byte)</td></tr>
+<tr class="memdesc:a6cb8b1b76cd7f500442d8d98d344fd41"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to read the byte from an interupt.  <br /></td></tr>
 <tr class="separator:a6cb8b1b76cd7f500442d8d98d344fd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a210374b50462acdedab00df64d5cea3c" id="r_a210374b50462acdedab00df64d5cea3c"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mouse_8c.html#a210374b50462acdedab00df64d5cea3c">mouse_ih</a> ()</td></tr>
+<tr class="memdesc:a210374b50462acdedab00df64d5cea3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to handle the interupt of the mouse.  <br /></td></tr>
 <tr class="separator:a210374b50462acdedab00df64d5cea3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25afb9cf1225bb0b03c80719eb1a9e66" id="r_a25afb9cf1225bb0b03c80719eb1a9e66"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mouse_8c.html#a25afb9cf1225bb0b03c80719eb1a9e66">build_packet</a> (struct packet *pp)</td></tr>
+<tr class="memdesc:a25afb9cf1225bb0b03c80719eb1a9e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to build the struct packet.  <br /></td></tr>
 <tr class="separator:a25afb9cf1225bb0b03c80719eb1a9e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a926121b9c6d89ac8825f115e3eb8dac3" id="r_a926121b9c6d89ac8825f115e3eb8dac3"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mouse_8c.html#a926121b9c6d89ac8825f115e3eb8dac3">send_command</a> (uint8_t command)</td></tr>
+<tr class="memdesc:a926121b9c6d89ac8825f115e3eb8dac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to send a command to the mouse.  <br /></td></tr>
 <tr class="separator:a926121b9c6d89ac8825f115e3eb8dac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -127,6 +134,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function allows to build the struct packet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pp</td><td>Struct packet that holds the information about the mouse. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a210374b50462acdedab00df64d5cea3c" name="a210374b50462acdedab00df64d5cea3c"></a>
@@ -143,6 +158,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This function allows to handle the interupt of the mouse. </p>
 
 </div>
 </div>
@@ -172,6 +189,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function allows to read the byte from an interupt. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>Integer to status of the mouse. </td></tr>
+    <tr><td class="paramname">byte</td><td>Integer to save the byte. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of the function. </dd></dl>
+
 </div>
 </div>
 <a id="ae61f9a128e7b7ac6922e520f40b8ae02" name="ae61f9a128e7b7ac6922e520f40b8ae02"></a>
@@ -189,6 +216,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This function allows to read the status of the mouse. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>Integer to status of the mouse. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of the function. </dd></dl>
 
 </div>
 </div>
@@ -208,6 +244,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function allows to subscribe the interupt for the mouse. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bit_no</td><td>Integer to save the address. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of the function. </dd></dl>
+
 </div>
 </div>
 <a id="a3ecf823d80520009ae5e0d76ae40a3c3" name="a3ecf823d80520009ae5e0d76ae40a3c3"></a>
@@ -224,6 +269,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This function allows to unsubscribe the interupt for the keyboard. </p>
+<dl class="section return"><dt>Returns</dt><dd>Status of the function. </dd></dl>
 
 </div>
 </div>
@@ -242,6 +290,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This function allows to send a command to the mouse. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Integer that holds the command. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of the function. </dd></dl>
 
 </div>
 </div>
