@@ -4,22 +4,13 @@
 #ifndef GRAPHICS_MACROS_H_INCLUDED
 #define GRAPHICS_MACROS_H_INCLUDED
 
-#define VC_BIOS_SERV  0x10 /** @brief TODO */
-#define VBE_CALL      0x4F /** @brief TODO */
-
-#define MBYTE_BASE  0x0
-#define MBYTE_SIZE  0xFFFFF
+#define VC_BIOS_SERV  0x10 
+#define VBE_CALL      0x4F 
 
 // Graphics Functions
-#define VBE_CTRL_INFO       0x00 /** @brief Get VBE Controller Information */
-#define VBE_MD_INFO         0x01 /** @brief Get VBE Mode Information */
-#define SET_VBE_MD          0x02 /** @brief Set VBE Mode */
-
-// Error codes (AH)
-#define AH_SUCCESS          0x00
-#define AH_FUNC_CALL_FAIL   0x01
-#define AH_FUNC_NOT_SUPP    0x02
-#define AH_FUNC_INVALID     0x03
+#define VBE_CTRL_INFO       0x00
+#define VBE_MD_INFO         0x01 
+#define SET_VBE_MD          0x02 
 
 // Graphics modes
 #define INDEXED_1024_768        0x105
@@ -31,28 +22,61 @@
 
 // Colors
 #define BLACK               0x00
-#define GET_RED(n)          (0xFF & ((n) >> 16))
-#define GET_GRE(n)          (0xFF & ((n) >>  8))
-#define GET_BLU(n)          (0xFF & (n))
-#define SET_RED(n)          (((n)&0xFF) << 16)
-#define SET_GRE(n)          (((n)&0xFF) <<  8)
-#define SET_BLU(n)          (((n)&0xFF))
-#define SET_COLOR(r,g,b)    (SET_RED(r) | SET_GRE(g) | SET_BLU(b))
 
 // Functions
+/**
+ * @brief This function allows to set the graphic mode.
+ * @param mode Mode.
+ * @return Status of the function.
+*/
 int (set_graphics_mode)(uint16_t mode);
+/**
+ * @brief This function allows to get permission of the Minix. It calls the sys_privctl().
+ * @param base_addr Base address of the VRAM.
+ * @param size Size of the VRAM.
+ * @return Status of the function.
+*/
 int (get_permission)(unsigned int base_addr, unsigned int size);
+/**
+ * @brief This function allows to map the VRAM. It calls the vm_map_phys().
+ * @return Status of the function.
+*/
 int (map_vram)(void);
+/**
+ * @brief This function allows to change the color of a pixel.
+ * @param x Position in the X-axis.
+ * @param y Position in the Y-axis.
+ * @param color Hexadecimal Value of the color.
+ * @return Status of the function.
+*/
 int (set_pixel)(uint16_t x, uint16_t y, uint32_t color);
+/**
+ * @brief This function allows to change the color of a pixel. It ignores the black pixels.
+ * @param x Position in the X-axis.
+ * @param y Position in the Y-axis.
+ * @param color Hexadecimal Value of the color.
+ * @return Status of the function.
+*/
 int (set_pixel_no_black)(uint16_t x, uint16_t y, uint32_t color);
-int (paint_screen)(uint32_t color);
-int (clear_screen)();
+/**
+ * @brief This function returns the size of the resolution in the X-axis.
+ * @return Size of the width of the screen.
+*/
 uint16_t get_XRes(void);
+/**
+ * @brief This function returns the size of the resolution in the Y-axis.
+ * @return Size of the height of the screen.
+*/
 uint16_t get_YRes(void);
+/**
+ * @brief This function returns the number of bits in each pixel.
+ * @return Number of bits in each pixel.
+*/
 uint16_t get_bits_pixel(void);
+/**
+ * @brief This function returns the number of bytes in each pixel.
+ * @return Number of bytes in each pixel.
+*/
 uint16_t get_bytes_pixel(void);
-uint16_t get_RedMaskSize  (void);
-uint16_t get_GreenMaskSize(void);
-uint16_t get_BlueMaskSize (void);
 
-#endif /* end of include guard: GRAPHICS_MACROS_H_INCLUDED */
+#endif

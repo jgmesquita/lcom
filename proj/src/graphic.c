@@ -23,18 +23,14 @@ static vbe_mode_info_t vbe_mem_info;
 
 int (set_graphics_mode)(uint16_t mode) {
     struct reg86 reg_86;
-
     memset(&reg_86, 0, sizeof(struct reg86)); 
-
     // Set Reg86
     reg_86.intno = VC_BIOS_SERV;
     reg_86.ah = VBE_CALL; //0x4F
     reg_86.al = SET_VBE_MD; //0x02
     reg_86.bx = mode | LINEAR_FRAME_BUFFER_MD; // mode | 1<<14
-
     // BIOS CALL
     if (sys_int86(&reg_86) != OK) {
-        printf("%s: sys_int86 failed\n", __func__);
         return 1;
     }
     return 0;
@@ -70,10 +66,6 @@ uint16_t get_bits_pixel(void) {
 uint16_t get_bytes_pixel(void) {
     return (vbe_mem_info.BitsPerPixel + 7) >> 3;
 }
-
-uint16_t get_RedMaskSize  (void){ return vbe_mem_info.RedMaskSize  ; }
-uint16_t get_GreenMaskSize(void){ return vbe_mem_info.GreenMaskSize; }
-uint16_t get_BlueMaskSize (void){ return vbe_mem_info.BlueMaskSize ; }
 
 int (map_vram)(void) {
     int r;

@@ -25,14 +25,36 @@
 #define RTC_AF BIT(5)
 #define RTC_PF BIT(6)
 
+//Functions
+/**
+ * @brief This function allows to subscribe the interupt for the RTC.
+ * @param bit_no Integer to save the address.
+ * @return Status of the function.
+*/
 int rtc_subscribe_int(uint8_t *bit_no);
-
+/**
+ * @brief This function allows to unsubscribe the interupt for the mouse.
+*/
 int rtc_unsubscribe_int();
-
+/**
+ * @brief This function allows to read a register from the RTC.
+ * @param address Address of the register.
+ * @param data Integer to save the response from the register.
+ * @return Status of the function.
+*/
 int rtc_read_register(uint8_t address, uint8_t *data);
-
+/**
+ * @brief This function allows to set a register of the RTC.
+ * @param address Address of the register.
+ * @param data Integer that holds the data.
+ * @return Status of the function.
+*/
 int rtc_set_register(uint8_t address, uint8_t data);
-
+/**
+ * @brief This function allows to read the time from the RTC.
+ * @param string Array that holds the time.
+ * @return Status of the function.
+*/
 int rtc_read_time(char *string);
 
 #endif

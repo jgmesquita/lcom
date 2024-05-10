@@ -53,12 +53,42 @@
 #define TIMER_RB_SEL(n)  BIT((n) + 1)
 
 /* Functions */
-
+/**
+ * @brief This function allows to subscribe the interupt for the timer.
+ * @param bit_no Integer to save the address.
+ * @return Status of the function.
+*/
 int (timer_subscribe_int)(uint8_t *bit_no);
+/**
+ * @brief This function allows to unsubscribe the interupt for the timer.
+ * @return Status of the function.
+*/
 int (timer_unsubscribe_int)();
+/**
+ * @brief This function allows to handle the interupt. In this counts, it increments an integer "count" by 1 in each interupt.
+*/
 void (timer_int_handler)();
+/**
+ * @brief This function allows to get the configuration of the timer.
+ * @param timer Port for the specific timer.
+ * @param st Hexadecimal integer to save the response of the timer.
+ * @return Status of the function.
+*/
 int (timer_get_conf)(uint8_t timer, uint8_t *st);
+/**
+ * @brief This function allows to display the configuration of the timer.
+ * @param timer Port for the specific timer.
+ * @param st Hexadecimal integer with the response of the timer.
+ * @param field Struct to save the configuration.
+ * @return Status of the function.
+*/
 int (timer_display_conf)(uint8_t timer, uint8_t st, enum timer_status_field field);
+/**
+ * @brief This function allows to set the frequency of the timer.
+ * @param timer Port for the specific timer.
+ * @param freq Integer that holds the frequency.
+ * @return Status of the function.
+*/
 int (timer_set_frequency)(uint8_t timer, uint32_t freq);
 
 #endif /* _LCOM_I8254_H */
