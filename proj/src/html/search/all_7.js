@@ -1,0 +1,15 @@
+var searchData=
+[
+  ['h_0',['h',['../structsprite__t.html#a16611451551e3d15916bae723c3f59f7',1,'sprite_t']]],
+  ['handleclick_1',['handleclick',['../game_8c.html#a605f53c8da4f7368818fbbdb2e6569c2',1,'handleClick(uint8_t scancode, sprite_t *cursor, sprite_t *play, sprite_t *exit, int *state, int *good, game_t *game):&#160;game.c'],['../game_8h.html#a605f53c8da4f7368818fbbdb2e6569c2',1,'handleClick(uint8_t scancode, sprite_t *cursor, sprite_t *play, sprite_t *exit, int *state, int *good, game_t *game):&#160;game.c']]],
+  ['handlehorizontalmovementenemy_2',['handlehorizontalmovementenemy',['../game_8c.html#aab42810e09d04c66f738beb93f20a7e9',1,'handleHorizontalMovementEnemy(sprite_t *leftToRightEnemy, sprite_t *rightToLeftEnemy, int elapsed_time):&#160;game.c'],['../game_8h.html#aab42810e09d04c66f738beb93f20a7e9',1,'handleHorizontalMovementEnemy(sprite_t *leftToRightEnemy, sprite_t *rightToLeftEnemy, int elapsed_time):&#160;game.c']]],
+  ['handlemoviment_3',['handlemoviment',['../game_8c.html#ac64da043058446957d2f72c3510b8a01',1,'handleMoviment(uint8_t scancode, sprite_t *sp, int is_player):&#160;game.c'],['../game_8h.html#ac64da043058446957d2f72c3510b8a01',1,'handleMoviment(uint8_t scancode, sprite_t *sp, int is_player):&#160;game.c']]],
+  ['handlemovimentcursormouse_4',['handlemovimentcursormouse',['../game_8c.html#a07cde59097348864d0084157ad55a4f4',1,'handleMovimentCursorMouse(struct packet *pp, sprite_t *sp):&#160;game.c'],['../game_8h.html#a07cde59097348864d0084157ad55a4f4',1,'handleMovimentCursorMouse(struct packet *pp, sprite_t *sp):&#160;game.c']]],
+  ['handleverticalmovementenemy_5',['handleverticalmovementenemy',['../game_8c.html#a6938d29764b636746ce8d69840a6a61f',1,'handleVerticalMovementEnemy(sprite_t *verticalEnemy1, sprite_t *verticalEnemy2, int elapsed_time):&#160;game.c'],['../game_8h.html#a6938d29764b636746ce8d69840a6a61f',1,'handleVerticalMovementEnemy(sprite_t *verticalEnemy1, sprite_t *verticalEnemy2, int elapsed_time):&#160;game.c']]],
+  ['health_6',['health',['../structgame__t.html#ae448fb16f537982185a0c5e8db56bdc6',1,'game_t']]],
+  ['health_5fxpm_7',['health_xpm',['../xpm__templates_8h.html#ac7afd4bb0f8b9c61824dc2697d920071',1,'xpm_templates.h']]],
+  ['hook_5fid_8',['hook_id',['../proj_8c.html#a96f78a87d064e47d627d222f67a8d012',1,'hook_id:&#160;rtc.c'],['../rtc_8c.html#a96f78a87d064e47d627d222f67a8d012',1,'hook_id:&#160;rtc.c']]],
+  ['hook_5fid_5fkb_9',['hook_id_kb',['../keyboard_8c.html#a42e8a3da1f603e03ad02d400d76f7ae1',1,'hook_id_kb:&#160;keyboard.c'],['../proj_8c.html#a42e8a3da1f603e03ad02d400d76f7ae1',1,'hook_id_kb:&#160;keyboard.c']]],
+  ['hook_5fid_5fmouse_10',['hook_id_mouse',['../mouse_8c.html#a0b0da21bbdff62b7b28e9af7ec3d0d76',1,'hook_id_mouse:&#160;mouse.c'],['../proj_8c.html#a0b0da21bbdff62b7b28e9af7ec3d0d76',1,'hook_id_mouse:&#160;mouse.c']]],
+  ['hook_5fid_5ftimer_11',['hook_id_timer',['../proj_8c.html#a7f3d11d35385878045b6b6a2ec438ba8',1,'hook_id_timer:&#160;timer.c'],['../timer_8c.html#a7f3d11d35385878045b6b6a2ec438ba8',1,'hook_id_timer:&#160;timer.c']]]
+];

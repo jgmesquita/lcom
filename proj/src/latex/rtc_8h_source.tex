@@ -1,0 +1,43 @@
+\doxysection{rtc.\+h}
+\hypertarget{rtc_8h_source}{}\label{rtc_8h_source}\mbox{\hyperlink{rtc_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_RTC\_H\_\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_RTC\_H\_\_}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ RTC\_ADDR\_REG\ 0x70}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ RTC\_DATA\_REG\ 0x71}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ RTC\_IRQ\ 8}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ RTC\_SECONDS\_ADDRESS\ 0}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ RTC\_SECONDS\_ALARM\_ADDRESS\ 1}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ RTC\_MINUTES\_ADDRESS\ 2}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ RTC\_MINUTES\_ALARM\_ADDRESS\ 3}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ RTC\_HOURS\_ADDRESS\ 4}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ RTC\_HOURS\_ALARM\_ADDRESS\ 5}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ RTC\_DAY\_OF\_WEEK\_ADDRESS\ 6}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ RTC\_DAY\_OF\_MONTH\_ADDRESS\ 7}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ RTC\_MONTH\_ADDRESS\ 8}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ RTC\_YEAR\_ADDRESS\ 9}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ RTC\_REGISTER\_A\ 10}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ RTC\_REGISTER\_B\ 11}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ RTC\_REGISTER\_C\ 12}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ RTC\_REGISTER\_D\ 13}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ RTC\_UF\ BIT(4)}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ RTC\_AF\ BIT(5)}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ RTC\_PF\ BIT(6)}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{rtc_8h_a5171a9c0f54940fe60f7500896afcc86}{rtc\_subscribe\_int}}(uint8\_t\ *bit\_no);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{rtc_8h_ab8f17bf5280c908c8b199a90fefcc758}{rtc\_unsubscribe\_int}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{rtc_8h_a4b02e005d3b54c5760608f97c58950f9}{rtc\_read\_register}}(uint8\_t\ address,\ uint8\_t\ *data);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{rtc_8h_a04af70acf312f710c9d53029172a16f5}{rtc\_set\_register}}(uint8\_t\ address,\ uint8\_t\ data);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{rtc_8h_a6e8238e632c34c9ed1fb03ee69506721}{rtc\_read\_time}}(\textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

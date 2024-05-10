@@ -1,0 +1,67 @@
+\doxysection{keyboard.\+h}
+\hypertarget{keyboard_8h_source}{}\label{keyboard_8h_source}\mbox{\hyperlink{keyboard_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ KBC\_MACROS\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ KBC\_MACROS\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{/*\ KBC\ IRQ\ Line\ */}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ KBC\_IRQ\ \ \ \ \ 1\ \ \ }\textcolor{comment}{//\ KBC\ Controller\ IRQ\ Line}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ MOUSE\_IRQ\ \ \ 12\ \ }\textcolor{comment}{//\ Mouse\ IRQ\ Line\ }}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{comment}{/*\ Delay\ for\ KBC\ */}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ DELAY\ \ \ \ \ \ \ \ \ \ \ 20000\ }\textcolor{comment}{//\ KBC\ Response\ Delay\ }}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ KBC\_NUM\_TRIES\ \ \ 10\ \ \ \ }\textcolor{comment}{//\ Number\ of\ tries\ to\ issue\ command\ before\ timeout}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{/*\ I/O\ Ports\ Addresses\ */}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ KBC\_CMD\ \ \ \ \ 0x64\ }\textcolor{comment}{//\ Address\ to\ send\ commands\ to\ KBC\ }}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ KBC\_CMD\_ARG\ 0x60\ }\textcolor{comment}{//\ Address\ to\ write\ KBC\ Command\ Arguments\ }}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ STATUS\_REG\ \ 0x64\ }\textcolor{comment}{//\ KBC\ Status\ Register\ address\ }}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ OUTPUT\_BUF\ \ 0x60\ }\textcolor{comment}{//\ Address\ of\ Output\ Buffer\ of\ KBC\ }}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{/*\ KBC\ Commands\ */}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ READ\_KBC\_CMD\ \ \ \ 0x20\ }\textcolor{comment}{//\ Read\ KBC\ Command\ Byte\ }}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ WRITE\_KBC\_CMD\ \ \ 0x60\ }\textcolor{comment}{//\ Write\ KBC\ Command\ Byte}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ KBC\_SELF\_TEST\ \ \ 0xAA\ }\textcolor{comment}{//\ KBC\ Diagnostic\ Tests\ }}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ KBC\_INT\_TEST\ \ \ \ 0xAB\ }\textcolor{comment}{//\ Tests\ Keyboard\ Clock\ and\ Data\ lines\ }}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ KBC\_INT\_DISABLE\ 0xAD\ }\textcolor{comment}{//\ Disable\ KBC\ Interface\ }}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ KBC\_INT\_ENABLE\ \ 0xAE\ }\textcolor{comment}{//\ Enable\ KBC\ Interface\ }}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ MOUSE\_DISABLE\ \ \ 0xA7\ }\textcolor{comment}{//\ Disable\ Mouse\ }}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ MOUSE\_ENABLE\ \ \ \ 0xA8\ }\textcolor{comment}{//\ Enable\ Mouse\ }}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ MOUSE\_INT\_TEST\ \ 0xA9\ }\textcolor{comment}{//\ Tests\ Mouse\ data\ line\ }}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ MOUSE\_WRITE\_B\ \ \ 0xD4\ }\textcolor{comment}{//\ Write\ a\ byte\ directly\ to\ the\ mouse}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{comment}{/*\ Status\ Byte\ Masking\ */}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ OUT\_BUF\_FUL\ \ \ \ \ BIT(0)\ }\textcolor{comment}{//\ Output\ Buffer\ State\ }}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ IN\_BUF\_FULL\ \ \ \ \ BIT(1)\ }\textcolor{comment}{//\ Input\ Buffer\ State\ }}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ SYS\_FLAG\ \ \ \ \ \ \ \ BIT(2)\ }\textcolor{comment}{//\ System\ Flag\ }}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ DATA\_CMD\_WRITE\ \ BIT(3)\ }\textcolor{comment}{//\ Identifier\ of\ type\ of\ byte\ in\ input\ buffer\ }}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ INH\_FLAG\ \ \ \ \ \ \ \ BIT(4)\ }\textcolor{comment}{//\ Keyboard\ inihibited\ }}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ AUX\_MOUSE\ \ \ \ \ \ \ BIT(5)\ }\textcolor{comment}{//\ Mouse\ Data\ }}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ TIME\_OUT\_REC\ \ \ \ BIT(6)\ }\textcolor{comment}{//\ Time\ Out\ Error\ -\/\ Invalid\ Data\ }}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ PARITY\_ERROR\ \ \ \ BIT(7)\ }\textcolor{comment}{//\ Parity\ Error\ -\/\ Invalid\ Data\ }}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{comment}{/*\ Scancode\ Constants\ */}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ ESC\_BREAK\_CODE\ \ 0x81\ \ \ \ }\textcolor{comment}{//\ ESC\ Break\ Code}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ TWO\_BYTE\_CODE\ \ \ 0xE0\ \ \ \ }\textcolor{comment}{//\ First\ byte\ of\ a\ two\ byte\ Scancode}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ BREAK\_CODE\_BIT\ \ BIT(7)\ \ }\textcolor{comment}{//\ Bit\ to\ distinguish\ between\ Make\ code\ and\ Break\ code}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{comment}{/*\ Command\ byte\ masks\ */}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#define\ INT\_KBD\ \ \ \ \ \ \ \ \ BIT(0)\ \ }\textcolor{comment}{//\ Enable\ Keyboard\ Interrupts\ }}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ INT\_MOU\ \ \ \ \ \ \ \ \ BIT(1)\ \ }\textcolor{comment}{//\ Enable\ Mouse\ Interrupts\ }}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ DIS\_KBD\ \ \ \ \ \ \ \ \ BIT(4)\ \ }\textcolor{comment}{//\ Disable\ Keyboard\ }}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ DIS\_MOU\ \ \ \ \ \ \ \ \ BIT(5)\ \ }\textcolor{comment}{//\ Disable\ Mouse}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ void\ (\mbox{\hyperlink{keyboard_8h_aab084c9c77ba692fb692243554e3fe7d}{kb\_interupt\_handler}})();}
+\DoxyCodeLine{00057\ int\ (\mbox{\hyperlink{keyboard_8h_a7cf9ff7b2a68cc388492c91756a55153}{kb\_unsubscribe\_int}})();}
+\DoxyCodeLine{00058\ int\ (\mbox{\hyperlink{keyboard_8h_ab1f27c240a6c7b800a98edcab59a0977}{kb\_subscribe\_int}})(uint8\_t\ *bit\_no);}
+\DoxyCodeLine{00059\ int(\mbox{\hyperlink{keyboard_8h_a0f241a9a5c667c65e49c6e41fd74ebfa}{kb\_poll}})(uint8\_t\ read[],\ uint8\_t*\ size\_poll);}
+\DoxyCodeLine{00060\ int(\mbox{\hyperlink{keyboard_8h_a3269e459ed84272040850a0586fdbbbc}{kb\_full}})();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}

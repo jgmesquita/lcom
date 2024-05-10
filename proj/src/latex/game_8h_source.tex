@@ -1,0 +1,40 @@
+\doxysection{game.\+h}
+\hypertarget{game_8h_source}{}\label{game_8h_source}\mbox{\hyperlink{game_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sprite_8h}{sprite.h}}"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ COOLDOWN\_PERIOD\ 1}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ ARENA\_HEIGHT\ 768}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ ARENA\_WIDTH\ 646}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PLAYER\_X\ 200}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ PLAYER\_Y\ 500}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ V\_ENEMY1\_X\ 200}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ V\_ENEMY1\_Y\ 5}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ V\_ENEMY2\_X\ 400}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ V\_ENEMY2\_Y\ -\/100}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ LR\_ENEMY\_X\ 5}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ LR\_ENEMY\_Y\ 300}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ RL\_ENEMY\_X\ 610}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ RL\_ENEMY\_Y\ 100}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structgame__t_ae448fb16f537982185a0c5e8db56bdc6}{health}};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structgame__t_aef160b7437d94056f1dc59646cd5b87d}{score}};}
+\DoxyCodeLine{00021\ \}\ \mbox{\hyperlink{structgame__t}{game\_t}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{game_8h_a53ac7c066a59f3ff126d50ede430bb94}{check\_collision\_menu}}(\mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ el,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ cursor);}
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_ac64da043058446957d2f72c3510b8a01}{handleMoviment}}(uint8\_t\ \mbox{\hyperlink{keyboard_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}},\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ sp,\ \textcolor{keywordtype}{int}\ is\_player);}
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_a07cde59097348864d0084157ad55a4f4}{handleMovimentCursorMouse}}(\textcolor{keyword}{struct}\ packet*\ pp,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ sp);}
+\DoxyCodeLine{00026\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_a605f53c8da4f7368818fbbdb2e6569c2}{handleClick}}(uint8\_t\ \mbox{\hyperlink{keyboard_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}},\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ cursor,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ play,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ exit,\ \textcolor{keywordtype}{int}*\ state,\ \textcolor{keywordtype}{int}*\ good,\ \mbox{\hyperlink{structgame__t}{game\_t}}*\ game);}
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_a9fa55175b609f65c1d86073f051acdb9}{drawMenu}}(\mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ play,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ exit,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ cursor,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ logo);}
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_a3bfb2185ace92c19052be0f509932e2b}{drawRetryMenu}}(\mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ play,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ exit,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ cursor,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ textScore,\ \textcolor{keywordtype}{int}\ score);}
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{game_8h_aec95fdcd28e4225d8b2ceac7a7c1ef7f}{calculate\_new\_x}}(\textcolor{keywordtype}{int}\ enemyA\_width,\ \textcolor{keywordtype}{int}\ enemyB\_x);}
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_a6938d29764b636746ce8d69840a6a61f}{handleVerticalMovementEnemy}}(\mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ verticalEnemy1,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ verticalEnemy2,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{proj_8c_aa97c7080953b1a37809879b21049d531}{elapsed\_time}});}
+\DoxyCodeLine{00031\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{game_8h_a030abb8260262abccea11d958aa31f71}{calculate\_new\_y}}(\textcolor{keywordtype}{int}\ enemyA\_height,\ \textcolor{keywordtype}{int}\ enemyB\_y);}
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_aab42810e09d04c66f738beb93f20a7e9}{handleHorizontalMovementEnemy}}(\mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ leftToRightEnemy,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ rightToLeftEnemy,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{proj_8c_aa97c7080953b1a37809879b21049d531}{elapsed\_time}});}
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_a597cc42f0129a111b93a2d54e2e8f661}{draw\_numbers}}(\textcolor{keywordtype}{int}\ number,\ \textcolor{keywordtype}{int}\ position\_y,\ \textcolor{keywordtype}{int}\ position\_x);}
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_a3372876bad6dda631873c76bd886394c}{draw\_numbers\_time}}(\textcolor{keywordtype}{char}*\ \textcolor{keywordtype}{string},\ \textcolor{keywordtype}{int}\ position\_y,\ \textcolor{keywordtype}{int}\ position\_x);}
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{game_8h_a8c3437afa0dec63d8a827fb5935e5dfa}{check\_collision}}(\mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ player,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ explosion,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ enemy,\ \mbox{\hyperlink{structsprite__t}{sprite\_t}}*\ enemies[],\ \textcolor{keywordtype}{int}\ enemy\_index,\ \textcolor{keywordtype}{int}*\ \mbox{\hyperlink{proj_8c_afc4746c9ff4b8b0ac900812a19733040}{last\_collision\_time}},\ \textcolor{keywordtype}{int}*\ \mbox{\hyperlink{proj_8c_a7cd697ce4427efdf47a9ad36ffba0df8}{explosion\_time}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{proj_8c_aa97c7080953b1a37809879b21049d531}{elapsed\_time}});}
+
+\end{DoxyCode}

@@ -1,0 +1,166 @@
+\doxysection{list.\+h File Reference}
+\hypertarget{list_8h}{}\label{list_8h}\index{list.h@{list.h}}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structlist__node}{list\+\_\+node}} \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structlist}{list}} \mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{list_8h_ac9e4a242a24b93376a5cc5c8d3c55ee3}{list\+\_\+node\+\_\+ctor}} (\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}p, \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}n, void \texorpdfstring{$\ast$}{*}val)
+\item 
+void() \mbox{\hyperlink{list_8h_a9c3c941d3bed581de5bbf11f9ced6907}{list\+\_\+node\+\_\+dtor}} (\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}p)
+\item 
+\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{list_8h_a890ac97798c3d551a43dd53645a143b7}{list\+\_\+node\+\_\+next}} (const \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}p)
+\item 
+\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{list_8h_ab7ee0c5d902de7e0eefb4bff9b5dfe5d}{list\+\_\+node\+\_\+prev}} (const \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}p)
+\item 
+void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{list_8h_a8f8675cd888519bde7056a3b8fd4504b}{list\+\_\+node\+\_\+val}} (\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}p)
+\item 
+\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{list_8h_af642335ebfe40f8d63aaaea78f7e0308}{list\+\_\+ctor}} (void)
+\item 
+int() \mbox{\hyperlink{list_8h_a6a4d24daaaf898ac8f6f886f0aceebef}{list\+\_\+dtor}} (\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l)
+\item 
+\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{list_8h_a859aebc93bd2e34b4a4ed637dc1699f8}{list\+\_\+begin}} (\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l)
+\item 
+\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{list_8h_adfde317bb59fef887c65a2af0bb2e55b}{list\+\_\+end}} (\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l)
+\item 
+size\+\_\+t() \mbox{\hyperlink{list_8h_a940a856eccb0913ad3961bab1f4a84f3}{list\+\_\+size}} (const \mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l)
+\item 
+int() \mbox{\hyperlink{list_8h_ae3291470bcfb2e606dc53a9589c266f5}{list\+\_\+empty}} (const \mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l)
+\item 
+\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{list_8h_afbfffbc481416f8a293ca0871aba2890}{list\+\_\+insert}} (\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l, \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}position, void \texorpdfstring{$\ast$}{*}val)
+\item 
+void \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{list_8h_a6226f3f90943691a92b235ef2ff63861}{list\+\_\+erase}} (\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l, \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}position)
+\item 
+void() \mbox{\hyperlink{list_8h_abc42ecf861449c5c3471ce6b6766b8a1}{list\+\_\+push\+\_\+back}} (\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l, void \texorpdfstring{$\ast$}{*}val)
+\item 
+void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{list_8h_a25f27f005a5e5ee7af5dfbdca7e65cb3}{list\+\_\+front}} (\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l)
+\item 
+void() \mbox{\hyperlink{list_8h_acaa8e0824ffbf6567520e54314db64bd}{list\+\_\+pop\+\_\+front}} (\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l)
+\item 
+\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{list_8h_a443238752ab915254d6c84396a784f01}{list\+\_\+find}} (\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l, void \texorpdfstring{$\ast$}{*}val)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}\label{list_8h_a865bd3b3cd44b1d8f1d63746748fa807} 
+\index{list.h@{list.h}!list\_node\_t@{list\_node\_t}}
+\index{list\_node\_t@{list\_node\_t}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_node\_t}{list\_node\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structlist__node}{list\+\_\+node}} \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}}}
+
+\Hypertarget{list_8h_a15376354e4e8b4f1732e9df17f30786c}\label{list_8h_a15376354e4e8b4f1732e9df17f30786c} 
+\index{list.h@{list.h}!list\_t@{list\_t}}
+\index{list\_t@{list\_t}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_t}{list\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structlist}{list}} \mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{list_8h_a859aebc93bd2e34b4a4ed637dc1699f8}\label{list_8h_a859aebc93bd2e34b4a4ed637dc1699f8} 
+\index{list.h@{list.h}!list\_begin@{list\_begin}}
+\index{list\_begin@{list\_begin}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_begin()}{list\_begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}() list\+\_\+begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_af642335ebfe40f8d63aaaea78f7e0308}\label{list_8h_af642335ebfe40f8d63aaaea78f7e0308} 
+\index{list.h@{list.h}!list\_ctor@{list\_ctor}}
+\index{list\_ctor@{list\_ctor}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_ctor()}{list\_ctor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}() list\+\_\+ctor (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_a6a4d24daaaf898ac8f6f886f0aceebef}\label{list_8h_a6a4d24daaaf898ac8f6f886f0aceebef} 
+\index{list.h@{list.h}!list\_dtor@{list\_dtor}}
+\index{list\_dtor@{list\_dtor}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_dtor()}{list\_dtor()}}
+{\footnotesize\ttfamily int() list\+\_\+dtor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_ae3291470bcfb2e606dc53a9589c266f5}\label{list_8h_ae3291470bcfb2e606dc53a9589c266f5} 
+\index{list.h@{list.h}!list\_empty@{list\_empty}}
+\index{list\_empty@{list\_empty}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_empty()}{list\_empty()}}
+{\footnotesize\ttfamily int() list\+\_\+empty (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_adfde317bb59fef887c65a2af0bb2e55b}\label{list_8h_adfde317bb59fef887c65a2af0bb2e55b} 
+\index{list.h@{list.h}!list\_end@{list\_end}}
+\index{list\_end@{list\_end}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_end()}{list\_end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}() list\+\_\+end (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_a6226f3f90943691a92b235ef2ff63861}\label{list_8h_a6226f3f90943691a92b235ef2ff63861} 
+\index{list.h@{list.h}!list\_erase@{list\_erase}}
+\index{list\_erase@{list\_erase}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_erase()}{list\_erase()}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*}() list\+\_\+erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l,  }\item[{\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{position }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_a443238752ab915254d6c84396a784f01}\label{list_8h_a443238752ab915254d6c84396a784f01} 
+\index{list.h@{list.h}!list\_find@{list\_find}}
+\index{list\_find@{list\_find}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_find()}{list\_find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}() list\+\_\+find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l,  }\item[{void \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_a25f27f005a5e5ee7af5dfbdca7e65cb3}\label{list_8h_a25f27f005a5e5ee7af5dfbdca7e65cb3} 
+\index{list.h@{list.h}!list\_front@{list\_front}}
+\index{list\_front@{list\_front}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_front()}{list\_front()}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}() list\+\_\+front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_afbfffbc481416f8a293ca0871aba2890}\label{list_8h_afbfffbc481416f8a293ca0871aba2890} 
+\index{list.h@{list.h}!list\_insert@{list\_insert}}
+\index{list\_insert@{list\_insert}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_insert()}{list\_insert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}() list\+\_\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l,  }\item[{\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{position,  }\item[{void \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_ac9e4a242a24b93376a5cc5c8d3c55ee3}\label{list_8h_ac9e4a242a24b93376a5cc5c8d3c55ee3} 
+\index{list.h@{list.h}!list\_node\_ctor@{list\_node\_ctor}}
+\index{list\_node\_ctor@{list\_node\_ctor}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_node\_ctor()}{list\_node\_ctor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}() list\+\_\+node\+\_\+ctor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p,  }\item[{\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{n,  }\item[{void \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_a9c3c941d3bed581de5bbf11f9ced6907}\label{list_8h_a9c3c941d3bed581de5bbf11f9ced6907} 
+\index{list.h@{list.h}!list\_node\_dtor@{list\_node\_dtor}}
+\index{list\_node\_dtor@{list\_node\_dtor}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_node\_dtor()}{list\_node\_dtor()}}
+{\footnotesize\ttfamily void() list\+\_\+node\+\_\+dtor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_a890ac97798c3d551a43dd53645a143b7}\label{list_8h_a890ac97798c3d551a43dd53645a143b7} 
+\index{list.h@{list.h}!list\_node\_next@{list\_node\_next}}
+\index{list\_node\_next@{list\_node\_next}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_node\_next()}{list\_node\_next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}() list\+\_\+node\+\_\+next (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_ab7ee0c5d902de7e0eefb4bff9b5dfe5d}\label{list_8h_ab7ee0c5d902de7e0eefb4bff9b5dfe5d} 
+\index{list.h@{list.h}!list\_node\_prev@{list\_node\_prev}}
+\index{list\_node\_prev@{list\_node\_prev}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_node\_prev()}{list\_node\_prev()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}() list\+\_\+node\+\_\+prev (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_a8f8675cd888519bde7056a3b8fd4504b}\label{list_8h_a8f8675cd888519bde7056a3b8fd4504b} 
+\index{list.h@{list.h}!list\_node\_val@{list\_node\_val}}
+\index{list\_node\_val@{list\_node\_val}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_node\_val()}{list\_node\_val()}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}() list\+\_\+node\+\_\+val (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a865bd3b3cd44b1d8f1d63746748fa807}{list\+\_\+node\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_acaa8e0824ffbf6567520e54314db64bd}\label{list_8h_acaa8e0824ffbf6567520e54314db64bd} 
+\index{list.h@{list.h}!list\_pop\_front@{list\_pop\_front}}
+\index{list\_pop\_front@{list\_pop\_front}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_pop\_front()}{list\_pop\_front()}}
+{\footnotesize\ttfamily void() list\+\_\+pop\+\_\+front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_abc42ecf861449c5c3471ce6b6766b8a1}\label{list_8h_abc42ecf861449c5c3471ce6b6766b8a1} 
+\index{list.h@{list.h}!list\_push\_back@{list\_push\_back}}
+\index{list\_push\_back@{list\_push\_back}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_push\_back()}{list\_push\_back()}}
+{\footnotesize\ttfamily void() list\+\_\+push\+\_\+back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l,  }\item[{void \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+\Hypertarget{list_8h_a940a856eccb0913ad3961bab1f4a84f3}\label{list_8h_a940a856eccb0913ad3961bab1f4a84f3} 
+\index{list.h@{list.h}!list\_size@{list\_size}}
+\index{list\_size@{list\_size}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_size()}{list\_size()}}
+{\footnotesize\ttfamily size\+\_\+t() list\+\_\+size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l }\end{DoxyParamCaption})}
+

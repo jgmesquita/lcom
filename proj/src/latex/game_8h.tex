@@ -1,0 +1,229 @@
+\doxysection{game.\+h File Reference}
+\hypertarget{game_8h}{}\label{game_8h}\index{game.h@{game.h}}
+{\ttfamily \#include "{}sprite.\+h"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgame__t}{game\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{game_8h_a95b289b51f99681f0463da12d5f2dc36}{COOLDOWN\+\_\+\+PERIOD}}~1
+\item 
+\#define \mbox{\hyperlink{game_8h_a74c65f2cf6e5f55b98e9884867db6d2e}{ARENA\+\_\+\+HEIGHT}}~768
+\item 
+\#define \mbox{\hyperlink{game_8h_a0264098c1e94fd9923fc75558e16baf9}{ARENA\+\_\+\+WIDTH}}~646
+\item 
+\#define \mbox{\hyperlink{game_8h_a11d58baaffc49494ab91da16621b6a5c}{PLAYER\+\_\+X}}~200
+\item 
+\#define \mbox{\hyperlink{game_8h_ae22bdd9c98feb24a0843a4ff0fa6e662}{PLAYER\+\_\+Y}}~500
+\item 
+\#define \mbox{\hyperlink{game_8h_a01b589eb6c2e4375868a0aad2fda05db}{V\+\_\+\+ENEMY1\+\_\+X}}~200
+\item 
+\#define \mbox{\hyperlink{game_8h_a61ec418b8ab20a22b45080e13f875897}{V\+\_\+\+ENEMY1\+\_\+Y}}~5
+\item 
+\#define \mbox{\hyperlink{game_8h_aea91f4328f992a1734b72e9e617c0feb}{V\+\_\+\+ENEMY2\+\_\+X}}~400
+\item 
+\#define \mbox{\hyperlink{game_8h_abf19f37ae94f4b4115a44ccf7701c6e6}{V\+\_\+\+ENEMY2\+\_\+Y}}~-\/100
+\item 
+\#define \mbox{\hyperlink{game_8h_a31969bcf91f64dc3567cd679a9249f21}{LR\+\_\+\+ENEMY\+\_\+X}}~5
+\item 
+\#define \mbox{\hyperlink{game_8h_adac0d2687eb028cc52838c63d828c892}{LR\+\_\+\+ENEMY\+\_\+Y}}~300
+\item 
+\#define \mbox{\hyperlink{game_8h_a4fd809c399033d0fadec726a81fcdf93}{RL\+\_\+\+ENEMY\+\_\+X}}~610
+\item 
+\#define \mbox{\hyperlink{game_8h_a62fe1f9a824fe75d097bce49215183f4}{RL\+\_\+\+ENEMY\+\_\+Y}}~100
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{game_8h_a53ac7c066a59f3ff126d50ede430bb94}{check\+\_\+collision\+\_\+menu}} (\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}el, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}cursor)
+\item 
+void \mbox{\hyperlink{game_8h_ac64da043058446957d2f72c3510b8a01}{handle\+Moviment}} (uint8\+\_\+t \mbox{\hyperlink{keyboard_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}sp, int is\+\_\+player)
+\item 
+void \mbox{\hyperlink{game_8h_a07cde59097348864d0084157ad55a4f4}{handle\+Moviment\+Cursor\+Mouse}} (struct packet \texorpdfstring{$\ast$}{*}pp, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}sp)
+\item 
+void \mbox{\hyperlink{game_8h_a605f53c8da4f7368818fbbdb2e6569c2}{handle\+Click}} (uint8\+\_\+t \mbox{\hyperlink{keyboard_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}cursor, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}play, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}exit, int \texorpdfstring{$\ast$}{*}state, int \texorpdfstring{$\ast$}{*}good, \mbox{\hyperlink{structgame__t}{game\+\_\+t}} \texorpdfstring{$\ast$}{*}game)
+\item 
+void \mbox{\hyperlink{game_8h_a9fa55175b609f65c1d86073f051acdb9}{draw\+Menu}} (\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}play, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}exit, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}cursor, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}logo)
+\item 
+void \mbox{\hyperlink{game_8h_a3bfb2185ace92c19052be0f509932e2b}{draw\+Retry\+Menu}} (\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}play, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}exit, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}cursor, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}text\+Score, int score)
+\item 
+int \mbox{\hyperlink{game_8h_aec95fdcd28e4225d8b2ceac7a7c1ef7f}{calculate\+\_\+new\+\_\+x}} (int enemy\+A\+\_\+width, int enemy\+B\+\_\+x)
+\item 
+void \mbox{\hyperlink{game_8h_a6938d29764b636746ce8d69840a6a61f}{handle\+Vertical\+Movement\+Enemy}} (\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}vertical\+Enemy1, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}vertical\+Enemy2, int \mbox{\hyperlink{proj_8c_aa97c7080953b1a37809879b21049d531}{elapsed\+\_\+time}})
+\item 
+int \mbox{\hyperlink{game_8h_a030abb8260262abccea11d958aa31f71}{calculate\+\_\+new\+\_\+y}} (int enemy\+A\+\_\+height, int enemy\+B\+\_\+y)
+\item 
+void \mbox{\hyperlink{game_8h_aab42810e09d04c66f738beb93f20a7e9}{handle\+Horizontal\+Movement\+Enemy}} (\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}left\+To\+Right\+Enemy, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}right\+To\+Left\+Enemy, int \mbox{\hyperlink{proj_8c_aa97c7080953b1a37809879b21049d531}{elapsed\+\_\+time}})
+\item 
+void \mbox{\hyperlink{game_8h_a597cc42f0129a111b93a2d54e2e8f661}{draw\+\_\+numbers}} (int number, int position\+\_\+y, int position\+\_\+x)
+\item 
+void \mbox{\hyperlink{game_8h_a3372876bad6dda631873c76bd886394c}{draw\+\_\+numbers\+\_\+time}} (char \texorpdfstring{$\ast$}{*}string, int position\+\_\+y, int position\+\_\+x)
+\item 
+bool \mbox{\hyperlink{game_8h_a8c3437afa0dec63d8a827fb5935e5dfa}{check\+\_\+collision}} (\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}player, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}explosion, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}enemy, \mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}enemies\mbox{[}$\,$\mbox{]}, int enemy\+\_\+index, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{proj_8c_afc4746c9ff4b8b0ac900812a19733040}{last\+\_\+collision\+\_\+time}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{proj_8c_a7cd697ce4427efdf47a9ad36ffba0df8}{explosion\+\_\+time}}, int \mbox{\hyperlink{proj_8c_aa97c7080953b1a37809879b21049d531}{elapsed\+\_\+time}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{game_8h_a74c65f2cf6e5f55b98e9884867db6d2e}\label{game_8h_a74c65f2cf6e5f55b98e9884867db6d2e} 
+\index{game.h@{game.h}!ARENA\_HEIGHT@{ARENA\_HEIGHT}}
+\index{ARENA\_HEIGHT@{ARENA\_HEIGHT}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{ARENA\_HEIGHT}{ARENA\_HEIGHT}}
+{\footnotesize\ttfamily \#define ARENA\+\_\+\+HEIGHT~768}
+
+\Hypertarget{game_8h_a0264098c1e94fd9923fc75558e16baf9}\label{game_8h_a0264098c1e94fd9923fc75558e16baf9} 
+\index{game.h@{game.h}!ARENA\_WIDTH@{ARENA\_WIDTH}}
+\index{ARENA\_WIDTH@{ARENA\_WIDTH}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{ARENA\_WIDTH}{ARENA\_WIDTH}}
+{\footnotesize\ttfamily \#define ARENA\+\_\+\+WIDTH~646}
+
+\Hypertarget{game_8h_a95b289b51f99681f0463da12d5f2dc36}\label{game_8h_a95b289b51f99681f0463da12d5f2dc36} 
+\index{game.h@{game.h}!COOLDOWN\_PERIOD@{COOLDOWN\_PERIOD}}
+\index{COOLDOWN\_PERIOD@{COOLDOWN\_PERIOD}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{COOLDOWN\_PERIOD}{COOLDOWN\_PERIOD}}
+{\footnotesize\ttfamily \#define COOLDOWN\+\_\+\+PERIOD~1}
+
+\Hypertarget{game_8h_a31969bcf91f64dc3567cd679a9249f21}\label{game_8h_a31969bcf91f64dc3567cd679a9249f21} 
+\index{game.h@{game.h}!LR\_ENEMY\_X@{LR\_ENEMY\_X}}
+\index{LR\_ENEMY\_X@{LR\_ENEMY\_X}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{LR\_ENEMY\_X}{LR\_ENEMY\_X}}
+{\footnotesize\ttfamily \#define LR\+\_\+\+ENEMY\+\_\+X~5}
+
+\Hypertarget{game_8h_adac0d2687eb028cc52838c63d828c892}\label{game_8h_adac0d2687eb028cc52838c63d828c892} 
+\index{game.h@{game.h}!LR\_ENEMY\_Y@{LR\_ENEMY\_Y}}
+\index{LR\_ENEMY\_Y@{LR\_ENEMY\_Y}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{LR\_ENEMY\_Y}{LR\_ENEMY\_Y}}
+{\footnotesize\ttfamily \#define LR\+\_\+\+ENEMY\+\_\+Y~300}
+
+\Hypertarget{game_8h_a11d58baaffc49494ab91da16621b6a5c}\label{game_8h_a11d58baaffc49494ab91da16621b6a5c} 
+\index{game.h@{game.h}!PLAYER\_X@{PLAYER\_X}}
+\index{PLAYER\_X@{PLAYER\_X}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_X}{PLAYER\_X}}
+{\footnotesize\ttfamily \#define PLAYER\+\_\+X~200}
+
+\Hypertarget{game_8h_ae22bdd9c98feb24a0843a4ff0fa6e662}\label{game_8h_ae22bdd9c98feb24a0843a4ff0fa6e662} 
+\index{game.h@{game.h}!PLAYER\_Y@{PLAYER\_Y}}
+\index{PLAYER\_Y@{PLAYER\_Y}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_Y}{PLAYER\_Y}}
+{\footnotesize\ttfamily \#define PLAYER\+\_\+Y~500}
+
+\Hypertarget{game_8h_a4fd809c399033d0fadec726a81fcdf93}\label{game_8h_a4fd809c399033d0fadec726a81fcdf93} 
+\index{game.h@{game.h}!RL\_ENEMY\_X@{RL\_ENEMY\_X}}
+\index{RL\_ENEMY\_X@{RL\_ENEMY\_X}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{RL\_ENEMY\_X}{RL\_ENEMY\_X}}
+{\footnotesize\ttfamily \#define RL\+\_\+\+ENEMY\+\_\+X~610}
+
+\Hypertarget{game_8h_a62fe1f9a824fe75d097bce49215183f4}\label{game_8h_a62fe1f9a824fe75d097bce49215183f4} 
+\index{game.h@{game.h}!RL\_ENEMY\_Y@{RL\_ENEMY\_Y}}
+\index{RL\_ENEMY\_Y@{RL\_ENEMY\_Y}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{RL\_ENEMY\_Y}{RL\_ENEMY\_Y}}
+{\footnotesize\ttfamily \#define RL\+\_\+\+ENEMY\+\_\+Y~100}
+
+\Hypertarget{game_8h_a01b589eb6c2e4375868a0aad2fda05db}\label{game_8h_a01b589eb6c2e4375868a0aad2fda05db} 
+\index{game.h@{game.h}!V\_ENEMY1\_X@{V\_ENEMY1\_X}}
+\index{V\_ENEMY1\_X@{V\_ENEMY1\_X}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{V\_ENEMY1\_X}{V\_ENEMY1\_X}}
+{\footnotesize\ttfamily \#define V\+\_\+\+ENEMY1\+\_\+X~200}
+
+\Hypertarget{game_8h_a61ec418b8ab20a22b45080e13f875897}\label{game_8h_a61ec418b8ab20a22b45080e13f875897} 
+\index{game.h@{game.h}!V\_ENEMY1\_Y@{V\_ENEMY1\_Y}}
+\index{V\_ENEMY1\_Y@{V\_ENEMY1\_Y}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{V\_ENEMY1\_Y}{V\_ENEMY1\_Y}}
+{\footnotesize\ttfamily \#define V\+\_\+\+ENEMY1\+\_\+Y~5}
+
+\Hypertarget{game_8h_aea91f4328f992a1734b72e9e617c0feb}\label{game_8h_aea91f4328f992a1734b72e9e617c0feb} 
+\index{game.h@{game.h}!V\_ENEMY2\_X@{V\_ENEMY2\_X}}
+\index{V\_ENEMY2\_X@{V\_ENEMY2\_X}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{V\_ENEMY2\_X}{V\_ENEMY2\_X}}
+{\footnotesize\ttfamily \#define V\+\_\+\+ENEMY2\+\_\+X~400}
+
+\Hypertarget{game_8h_abf19f37ae94f4b4115a44ccf7701c6e6}\label{game_8h_abf19f37ae94f4b4115a44ccf7701c6e6} 
+\index{game.h@{game.h}!V\_ENEMY2\_Y@{V\_ENEMY2\_Y}}
+\index{V\_ENEMY2\_Y@{V\_ENEMY2\_Y}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{V\_ENEMY2\_Y}{V\_ENEMY2\_Y}}
+{\footnotesize\ttfamily \#define V\+\_\+\+ENEMY2\+\_\+Y~-\/100}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{game_8h_aec95fdcd28e4225d8b2ceac7a7c1ef7f}\label{game_8h_aec95fdcd28e4225d8b2ceac7a7c1ef7f} 
+\index{game.h@{game.h}!calculate\_new\_x@{calculate\_new\_x}}
+\index{calculate\_new\_x@{calculate\_new\_x}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{calculate\_new\_x()}{calculate\_new\_x()}}
+{\footnotesize\ttfamily int calculate\+\_\+new\+\_\+x (\begin{DoxyParamCaption}\item[{int}]{enemy\+A\+\_\+width,  }\item[{int}]{enemy\+B\+\_\+x }\end{DoxyParamCaption})}
+
+\Hypertarget{game_8h_a030abb8260262abccea11d958aa31f71}\label{game_8h_a030abb8260262abccea11d958aa31f71} 
+\index{game.h@{game.h}!calculate\_new\_y@{calculate\_new\_y}}
+\index{calculate\_new\_y@{calculate\_new\_y}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{calculate\_new\_y()}{calculate\_new\_y()}}
+{\footnotesize\ttfamily int calculate\+\_\+new\+\_\+y (\begin{DoxyParamCaption}\item[{int}]{enemy\+A\+\_\+height,  }\item[{int}]{enemy\+B\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{game_8h_a8c3437afa0dec63d8a827fb5935e5dfa}\label{game_8h_a8c3437afa0dec63d8a827fb5935e5dfa} 
+\index{game.h@{game.h}!check\_collision@{check\_collision}}
+\index{check\_collision@{check\_collision}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{check\_collision()}{check\_collision()}}
+{\footnotesize\ttfamily bool check\+\_\+collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{player,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{explosion,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{enemy,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{enemies\mbox{[}$\,$\mbox{]},  }\item[{int}]{enemy\+\_\+index,  }\item[{int \texorpdfstring{$\ast$}{*}}]{last\+\_\+collision\+\_\+time,  }\item[{int \texorpdfstring{$\ast$}{*}}]{explosion\+\_\+time,  }\item[{int}]{elapsed\+\_\+time }\end{DoxyParamCaption})}
+
+\Hypertarget{game_8h_a53ac7c066a59f3ff126d50ede430bb94}\label{game_8h_a53ac7c066a59f3ff126d50ede430bb94} 
+\index{game.h@{game.h}!check\_collision\_menu@{check\_collision\_menu}}
+\index{check\_collision\_menu@{check\_collision\_menu}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{check\_collision\_menu()}{check\_collision\_menu()}}
+{\footnotesize\ttfamily bool check\+\_\+collision\+\_\+menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{el,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cursor }\end{DoxyParamCaption})}
+
+\Hypertarget{game_8h_a597cc42f0129a111b93a2d54e2e8f661}\label{game_8h_a597cc42f0129a111b93a2d54e2e8f661} 
+\index{game.h@{game.h}!draw\_numbers@{draw\_numbers}}
+\index{draw\_numbers@{draw\_numbers}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{draw\_numbers()}{draw\_numbers()}}
+{\footnotesize\ttfamily void draw\+\_\+numbers (\begin{DoxyParamCaption}\item[{int}]{number,  }\item[{int}]{position\+\_\+y,  }\item[{int}]{position\+\_\+x }\end{DoxyParamCaption})}
+
+\Hypertarget{game_8h_a3372876bad6dda631873c76bd886394c}\label{game_8h_a3372876bad6dda631873c76bd886394c} 
+\index{game.h@{game.h}!draw\_numbers\_time@{draw\_numbers\_time}}
+\index{draw\_numbers\_time@{draw\_numbers\_time}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{draw\_numbers\_time()}{draw\_numbers\_time()}}
+{\footnotesize\ttfamily void draw\+\_\+numbers\+\_\+time (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{string,  }\item[{int}]{position\+\_\+y,  }\item[{int}]{position\+\_\+x }\end{DoxyParamCaption})}
+
+\Hypertarget{game_8h_a9fa55175b609f65c1d86073f051acdb9}\label{game_8h_a9fa55175b609f65c1d86073f051acdb9} 
+\index{game.h@{game.h}!drawMenu@{drawMenu}}
+\index{drawMenu@{drawMenu}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{drawMenu()}{drawMenu()}}
+{\footnotesize\ttfamily void draw\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{play,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{exit,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cursor,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{logo }\end{DoxyParamCaption})}
+
+\Hypertarget{game_8h_a3bfb2185ace92c19052be0f509932e2b}\label{game_8h_a3bfb2185ace92c19052be0f509932e2b} 
+\index{game.h@{game.h}!drawRetryMenu@{drawRetryMenu}}
+\index{drawRetryMenu@{drawRetryMenu}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{drawRetryMenu()}{drawRetryMenu()}}
+{\footnotesize\ttfamily void draw\+Retry\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{play,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{exit,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cursor,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{text\+Score,  }\item[{int}]{score }\end{DoxyParamCaption})}
+
+\Hypertarget{game_8h_a605f53c8da4f7368818fbbdb2e6569c2}\label{game_8h_a605f53c8da4f7368818fbbdb2e6569c2} 
+\index{game.h@{game.h}!handleClick@{handleClick}}
+\index{handleClick@{handleClick}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{handleClick()}{handleClick()}}
+{\footnotesize\ttfamily void handle\+Click (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cursor,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{play,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{exit,  }\item[{int \texorpdfstring{$\ast$}{*}}]{state,  }\item[{int \texorpdfstring{$\ast$}{*}}]{good,  }\item[{\mbox{\hyperlink{structgame__t}{game\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{game }\end{DoxyParamCaption})}
+
+\Hypertarget{game_8h_aab42810e09d04c66f738beb93f20a7e9}\label{game_8h_aab42810e09d04c66f738beb93f20a7e9} 
+\index{game.h@{game.h}!handleHorizontalMovementEnemy@{handleHorizontalMovementEnemy}}
+\index{handleHorizontalMovementEnemy@{handleHorizontalMovementEnemy}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{handleHorizontalMovementEnemy()}{handleHorizontalMovementEnemy()}}
+{\footnotesize\ttfamily void handle\+Horizontal\+Movement\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{left\+To\+Right\+Enemy,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{right\+To\+Left\+Enemy,  }\item[{int}]{elapsed\+\_\+time }\end{DoxyParamCaption})}
+
+\Hypertarget{game_8h_ac64da043058446957d2f72c3510b8a01}\label{game_8h_ac64da043058446957d2f72c3510b8a01} 
+\index{game.h@{game.h}!handleMoviment@{handleMoviment}}
+\index{handleMoviment@{handleMoviment}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{handleMoviment()}{handleMoviment()}}
+{\footnotesize\ttfamily void handle\+Moviment (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{sp,  }\item[{int}]{is\+\_\+player }\end{DoxyParamCaption})}
+
+\Hypertarget{game_8h_a07cde59097348864d0084157ad55a4f4}\label{game_8h_a07cde59097348864d0084157ad55a4f4} 
+\index{game.h@{game.h}!handleMovimentCursorMouse@{handleMovimentCursorMouse}}
+\index{handleMovimentCursorMouse@{handleMovimentCursorMouse}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{handleMovimentCursorMouse()}{handleMovimentCursorMouse()}}
+{\footnotesize\ttfamily void handle\+Moviment\+Cursor\+Mouse (\begin{DoxyParamCaption}\item[{struct packet \texorpdfstring{$\ast$}{*}}]{pp,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{sp }\end{DoxyParamCaption})}
+
+\Hypertarget{game_8h_a6938d29764b636746ce8d69840a6a61f}\label{game_8h_a6938d29764b636746ce8d69840a6a61f} 
+\index{game.h@{game.h}!handleVerticalMovementEnemy@{handleVerticalMovementEnemy}}
+\index{handleVerticalMovementEnemy@{handleVerticalMovementEnemy}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{handleVerticalMovementEnemy()}{handleVerticalMovementEnemy()}}
+{\footnotesize\ttfamily void handle\+Vertical\+Movement\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{vertical\+Enemy1,  }\item[{\mbox{\hyperlink{structsprite__t}{sprite\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{vertical\+Enemy2,  }\item[{int}]{elapsed\+\_\+time }\end{DoxyParamCaption})}
+

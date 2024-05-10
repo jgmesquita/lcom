@@ -1,0 +1,53 @@
+\doxysection{mouse.\+h}
+\hypertarget{mouse_8h_source}{}\label{mouse_8h_source}\mbox{\hyperlink{mouse_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifndef\ MOUSE\_MACROS\_H\_INCLUDED}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ MOUSE\_MACROS\_H\_INCLUDED}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{/*\ Mouse\ Data\ Packet\ */}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ Byte\ 0\ -\/\ Button\ States}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ LEFT\_BUTTON\ \ \ \ \ BIT(0)\ }\textcolor{comment}{/*\ @brief\ Left\ button\ click\ event*/}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ RIGHT\_BUTTON\ \ \ \ BIT(1)\ }\textcolor{comment}{/*\ @brief\ Right\ button\ click\ event\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ MIDDLE\_BUTTON\ \ \ BIT(2)\ }\textcolor{comment}{/*\ @brief\ Middle\ button\ click\ event\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ FIRST\_BYTE\_ID\ \ \ BIT(3)\ }\textcolor{comment}{/*\ @brief\ Identifier\ of\ first\ byte\ of\ packet\ CAREFUL:\ Not\ 100\%\ accurate\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ MSB\_X\_DELTA\ \ \ \ \ BIT(4)\ }\textcolor{comment}{/*\ @brief\ Most\ significant\ bit\ of\ X\ delta\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ MSB\_Y\_DELTA\ \ \ \ \ BIT(5)\ }\textcolor{comment}{/*\ @brief\ Most\ significant\ bit\ of\ Y\ delta\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ X\_OVERFLOW\ \ \ \ \ \ BIT(6)\ }\textcolor{comment}{/*\ @brief\ X\ delta\ overflowed\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ Y\_OVERFLOW\ \ \ \ \ \ BIT(7)\ }\textcolor{comment}{/*\ @brief\ Y\ delta\ overflowed\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00017\ \textcolor{comment}{//\ Byte\ 1\ -\/\ X\ delta}}
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ Byte\ 2\ -\/\ Y\ delta}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{/*\ Mouse\ Commands\ */}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ RESET\ \ \ \ \ \ \ \ \ \ \ 0xFF\ }\textcolor{comment}{/*\ @brief\ Reset\ mouse\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ RESEND\ \ \ \ \ \ \ \ \ \ 0xFE\ }\textcolor{comment}{/*\ @brief\ Resend\ command\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ DEFAULT\ \ \ \ \ \ \ \ \ 0xF6\ }\textcolor{comment}{/*\ @brief\ Set\ default\ values\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ DIS\_DATA\_REP\ \ \ \ 0xF5\ }\textcolor{comment}{/*\ @brief\ Disable\ Data\ Reporting\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ ENABLE\_DATA\_REP\ 0xF4\ }\textcolor{comment}{/*\ @brief\ Enable\ Data\ Reporting\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ SET\_SAMPLE\_RT\ \ \ 0xF3\ }\textcolor{comment}{/*\ @brief\ Sets\ state\ sampling\ rate\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ SET\_REMOTE\_MD\ \ \ 0xF0\ }\textcolor{comment}{/*\ @brief\ Sets\ Mouse\ on\ Remote\ Mode,\ data\ on\ request\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ READ\_DATA\ \ \ \ \ \ \ 0xEB\ }\textcolor{comment}{/*\ @brief\ Sends\ data\ packet\ request\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ SET\_STREAM\_MD\ \ \ 0xEA\ }\textcolor{comment}{/*\ @brief\ Sets\ mouse\ on\ Stream\ Mode,\ data\ on\ events\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ STATUS\_REQUEST\ \ 0xE9\ }\textcolor{comment}{/*\ @brief\ Get\ mouse\ configuration\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ SET\_RESOLUTION\ \ 0xE8\ }\textcolor{comment}{/*\ @brief\ Sets\ resolution\ for\ mouse\ movement\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ SCALING\_ACC\_MD\ \ 0xE7\ }\textcolor{comment}{/*\ @brief\ Sets\ scaling\ on\ acceleration\ mode\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ SCALING\_LIN\_MD\ \ 0xE6\ }\textcolor{comment}{/*\ @brief\ Sets\ scaling\ on\ linear\ mode\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{comment}{/*\ Mouse\ Controller\ Responses\ */}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ ACK\_OK\ \ \ \ \ \ 0xFA\ }\textcolor{comment}{/*\ @brief\ Operation\ sucessful\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ ACK\_INVALID\ 0xFE\ }\textcolor{comment}{/*\ @brief\ Invalid\ Byte,\ first\ occurence\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ ACK\_ERROR\ \ \ 0xFC\ }\textcolor{comment}{/*\ @brief\ Invalid\ Byte\ on\ resend\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MOUSE\_MACROS\_H\_INCLUDED}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ int\ (\mbox{\hyperlink{mouse_8h_a20285aed4b3ef45812cd967532dd09db}{mouse\_subscribe\_int}})(uint8\_t\ *bit\_no);}
+\DoxyCodeLine{00043\ int\ (\mbox{\hyperlink{mouse_8h_a3ecf823d80520009ae5e0d76ae40a3c3}{mouse\_unsubscribe\_int}})();}
+\DoxyCodeLine{00044\ int\ (\mbox{\hyperlink{mouse_8h_ae61f9a128e7b7ac6922e520f40b8ae02}{mouse\_read\_status}})(uint8\_t*\ status);}
+\DoxyCodeLine{00045\ int\ (\mbox{\hyperlink{mouse_8h_a6cb8b1b76cd7f500442d8d98d344fd41}{mouse\_read\_byte}})(uint8\_t\ status,\ uint8\_t*\ byte);}
+\DoxyCodeLine{00046\ void\ (\mbox{\hyperlink{mouse_8h_a210374b50462acdedab00df64d5cea3c}{mouse\_ih}})();}
+\DoxyCodeLine{00047\ void\ (\mbox{\hyperlink{mouse_8h_a25afb9cf1225bb0b03c80719eb1a9e66}{build\_packet}})(\textcolor{keyword}{struct\ }packet*\ pp);}
+\DoxyCodeLine{00048\ int\ (\mbox{\hyperlink{mouse_8h_a926121b9c6d89ac8825f115e3eb8dac3}{send\_command}})(uint8\_t\ command);}
+
+\end{DoxyCode}
