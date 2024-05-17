@@ -252,6 +252,11 @@ int(proj_main_loop)(int argc, char *argv[]) {
                                 handleMovimentCursorMouse(&mouse_packet, cursor);
                                 drawMenu(play, exit, cursor, logo);
                             }
+                            if (state == 1) {
+                                vg_draw_rectangle(player->x,player->y, player->w, player->h, BLACK);
+                                handleMovimentCursorMouse(&mouse_packet, player);
+                                sprite_draw(player);
+                            }
                             if (state == 2) {
                                 vg_draw_rectangle(cursor->x,cursor->y, cursor->w, cursor->h, BLACK);
                                 handleMovimentCursorMouse(&mouse_packet, cursor);

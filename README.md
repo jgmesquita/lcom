@@ -185,11 +185,79 @@ This is the main file for the project. It is responsible for the implementation 
 
 ### Function Call Graph (Doxygen)
 
-Não sei como fazer esta parte!
+[Não sei como fazer esta parte!]
 
 ## Section 4 (Implementation Details)
 
-To be done!
+### States
+
+It is very important to know in which screen we are to adapt the behaviour of our devices. For instance, if we are in the menu, we need only to control the cursor. However, if we are in the game, we need to control the player and not the cursor. 
+
+Let's see the example of the mouse:
+
+<img src="img/states.png">
+
+* State 0 - Initial Menu;
+* State 1 - Gameplay;
+* State 2 - End Game Menu.
+
+If the mouse receives an interrupt and the game is in the state 0 or 2, it will update the position of the cursor according to the respective interrupt. If it is in the state 1, it will update the player's position instead.
+
+### Collisions
+
+#### Boundaries
+
+The player has a limited space where he can move. He isn't supposed to cross the blue walls. To verify if the input from the player is valid, we should use a if-statement to check if it isn't going beyond boundaries.
+
+Let's see an example:
+
+<img src="img/handlemoviment.png">
+
+Beforehand, we should check if it is the player or the cursor for which we are calling the function.
+
+If it is the player, his moviment should be inside the arena. If the moviment doesn't respect the boundaries, it won't move. The same goes to the cursor. It should be inside the screen.
+
+#### Enemies
+
+One of the main aspects of the game is the collision with enemies. If the player collides with an enemy, he will lose health. After each input from the keyboard or the mouse, the code will check if the player's sprite intersects with an enemy's sprite.
+
+<img src="img/enemiescollision.png">
+
+If the result of the function is true, we will reduce the player's health.
+
+### Moviment of the Sprites
+
+When we want to reflect the moviment of the elements, we should update constantly the screen with the respective new positions. However, we should erase the pixels from the previous position to avoid leaving a trail.
+
+The next steps are important:
+
+1. Leave a black rectangle in the current position;
+2. Update to the new position;
+3. Draw the sprite in the new position.
+
+These steps will make the moviment smoother and it won't leave a trail.
+
+### Animated Sprites
+
+Since our game envolves planes, we could make a quick animated sprite when the players moves. It the player turns right, the plane will tilt to the right and move to the new position, returning to the normal sprite.
+
+This can be achieved by the following implementation:
+
+<img src="img/animatedsprite.png">
+
+The character will display temporarily a sprite which is tilted to the respective direction, followed by the normal sprite.
+
+### Game's Life Cycle
+
+During the game, the different values need to be updated. Each time the program receives an interrupt for the timer, it will increase a counter. If that counter reaches a number that is divisible by 60, it means it has elapsed 1 second.
+
+In each second, we will update those values. Let's check the following code:
+
+<img src="img/elements.png">
+
+As we can see, we will have a sprite for each element and the respective label. In each second, the score and the elapsed time will increase linearly with the elapsed time. The health will be updated according to the player's health and the clock will be updated with the retrieved time from the RTC.
+
+If the player's health reaches a value lower or equal than zero, the game will change to the state 2 (End Game Menu) and will draw the respective result, marking the end of the game. The player will have the possibility to start again!
 
 ## Section 5 (Conclusions)
 
